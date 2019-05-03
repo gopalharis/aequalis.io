@@ -7,13 +7,16 @@ export default () => {
   return gulp
     .src(appPath.allIMAGE)
     .pipe(plumber())
-    .pipe(
-      imagemin([
-        imagemin.gifsicle({ interlaced: true }),
-        imagemin.jpegtran({ progressive: true }),
-        imagemin.optipng({ optimizationLevel: 5 }),
-        imagemin.svgo({ plugins: [{ removeViewBox: false }] })
-      ])
-    )
+    .pipe(imagemin([
+      imagemin.gifsicle({ interlaced: true }),
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.optipng({ optimizationLevel: 5 }),
+      imagemin.svgo({
+        plugins: [
+          { removeViewBox: true },
+          { cleanupIDs: false }
+        ]
+      })
+    ]))
     .pipe(gulp.dest(appPath.imageOutput))
 }
