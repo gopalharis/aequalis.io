@@ -598,3 +598,89 @@ div.itemAuthorBlock p{
 	margin-bottom: 5px;
   line-height: 20px;
 }
+
+.pad-30{
+  padding-left: 30px
+}
+.bg-white{
+  background: #ffffff
+}
+.max{
+  max-width:92.66667%;flex: 0 0 92.66667%;
+}
+.one{
+  background: url('images/icons/1.webp');
+}
+.sec{
+  background: url('images/icons/2.webp');
+}
+.thir{
+  background: url('images/icons/3.webp')
+}
+.wid{
+  max-width: 100px !important;
+}
+.dark{
+  background: #06154d !important;
+}
+#industries{
+  background: url('../images/industry_bg.svg')!important;
+}
+.padd-20{
+  padding: 20px;padding-bottom: 0;margin-left: 0;margin-right: 0
+}
+.one1{
+  background-image: url('/images/1.webp');
+}
+.two2{
+  background-image: url('/images/2.webp');
+}
+.thi3{
+  background-image: url('/images/3.webp');
+}
+.four4{
+  background-image: url(/images/4.webp);min-height: 400px;
+}
+.pad-40{
+  padding: 40% 0;
+}
+.five5{
+  background-image: url(/images/5.webp);min-height: 400px;
+}
+.six6{
+  background-image: url(/images/6.webp);
+}
+.seven7{
+  background-image: url(/images/7.webp);
+}
+.eit8{
+  background-image: url(/images/8.webp);min-height: 400px;padding: 50px
+}
+.widt2{
+  max-width: 200px !important;
+}
+.solu{
+  background: url('/images/industry_bg.svg');background-size: cover;background-repeat: no-repeat;
+}
+.qui{
+  background: url('/images/icons/sollution_bg.webp');background-size: cover;object-fit:cover;background-repeat: no-repeat
+}
+.spic{
+  position: absolute;bottom:20%;right:5%;color: white;
+}
+.wt-txt{
+  color: white !important;
+}
+.pt{
+  padding: 20px;padding-left: 0 !important;color:black !important;;
+}
+.pt-10{
+  margin-left: -45px;
+  margin-top: 2%;
+}
+.mt-10{
+  margin-top: 3%;
+}
+.left-txt{
+  text-align: left
+}
