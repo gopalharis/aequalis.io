@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a5862d7-3817-4030-9ebf-27eceebbbc6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/style/main.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="111">
-              <caret line="1209" column="73" selection-start-line="1209" selection-start-column="67" selection-end-line="1209" selection-end-column="73" />
+              <caret line="1025" column="94" selection-start-line="1025" selection-start-column="94" selection-end-line="1025" selection-end-column="94" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#section#0;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -196,8 +196,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/style/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="12954" column="1" selection-start-line="12954" selection-start-column="1" selection-end-line="12954" selection-end-column="12" />
+            <state relative-caret-position="230">
+              <caret line="13579" column="54" selection-start-line="13579" selection-start-column="54" selection-end-line="13579" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -213,27 +213,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>a:hover</find>
-      <find>ass</find>
-      <find>m1.png</find>
-      <find>/1.</find>
-      <find>/1.png</find>
       <find>toggle</find>
       <find>teamwork%20copy.svg</find>
       <find>video-rectangle.svg</find>
       <find>meeting%20copy.svg</find>
-      <find>/6.png</find>
-      <find>/3.png</find>
       <find>5.png</find>
-      <find>/2.png</find>
-      <find>/7.png</find>
       <find>offwite.svg</find>
-      <find>16.png</find>
-      <find>15.png</find>
-      <find>14.png</find>
       <find>12.png</find>
-      <find>11.png</find>
       <find>13.png</find>
+      <find>serviceBg2</find>
+      <find>sevises_topbg</find>
+      <find>sollution_bg</find>
+      <find>13.</find>
+      <find>m1.png</find>
+      <find>11.png</find>
+      <find>12</find>
+      <find>14.png</find>
+      <find>15.png</find>
+      <find>16.png</find>
+      <find>patner-bg.</find>
+      <find>/7</find>
+      <find>/7.png</find>
+      <find>/2.png</find>
+      <find>/5.png</find>
+      <find>/3.png</find>
+      <find>/1.png</find>
+      <find>/6.png</find>
+      <find>patner-bg</find>
+      <find>partner</find>
+      <find>particles</find>
+      <find>part</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -246,9 +255,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/style/style.css" />
-        <option value="$PROJECT_DIR$/app/style/main.css" />
         <option value="$PROJECT_DIR$/app/script/js/script.js" />
         <option value="$PROJECT_DIR$/scripts/gulpTasks/image.js" />
+        <option value="$PROJECT_DIR$/app/style/main.css" />
         <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
@@ -349,7 +358,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13745000" />
+    <option name="totallyTimeSpent" value="17128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -443,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/style/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="12954" column="1" selection-start-line="12954" selection-start-column="1" selection-end-line="12954" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -500,10 +502,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/style/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="13579" column="54" selection-start-line="13579" selection-start-column="54" selection-end-line="13579" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
-          <caret line="1209" column="73" selection-start-line="1209" selection-start-column="67" selection-end-line="1209" selection-end-column="73" />
+          <caret line="1025" column="94" selection-start-line="1025" selection-start-column="94" selection-end-line="1025" selection-end-column="94" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#section#0;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
