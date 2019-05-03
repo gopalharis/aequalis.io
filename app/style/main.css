@@ -12057,7 +12057,7 @@ legend.scheduler-border {
     border-bottom-right-radius: 0;
     box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.18);
     /*background-blend-mode: , hue;*/
-    background: url('../../images/solutionrectangle.png');
+    background: url('../../images/solutionrectangle.webp');
     /*background-position: center center;*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -13588,7 +13588,7 @@ canvas {
     width: 100%;
     height: 100%;
     /*background-color: rgb(6, 21, 77);*/
-    /*background-image: url('../../images/patner-bg.png');*/
+    /*background-image: url('../../images/patner-bg.webp');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -13617,7 +13617,7 @@ canvas {
 }
 
 .contact-bg {
-    background: url('../../images/contact-bg.png');
+    background: url('../../images/contact-bg.webp');
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14027,7 +14027,7 @@ svg {
 
 .client-box {
     min-height: 125px;
-    background-image: url("../../images/group_57.png");
+    background-image: url("../../images/group_57.webp");
     background-color: #fff;
     border: 1px solid #eee;
     background-position: center;
@@ -14039,13 +14039,13 @@ svg {
     box-shadow: 15.8px 28.5px 26px 2.6px rgba(0, 0, 0, 0.72);
     background-color: #00c3ff;
     border: none;
-    background-image: url("../../images/group_62.png");
+    background-image: url("../../images/group_62.webp");
 
 }
 
 .client-box2 {
     min-height: 125px;
-    background-image: url("../../images/group_49.png");
+    background-image: url("../../images/group_49.webp");
     background-color: #fff;
     border: 1px solid #eee;
     background-position: center;
@@ -14057,13 +14057,13 @@ svg {
     box-shadow: 15.8px 28.5px 26px 2.6px rgba(0, 0, 0, 0.72);
     background-color: #00c3ff;
     border: none;
-    background-image: url("../../images/group_69.png");
+    background-image: url("../../images/group_69.webp");
 
 }
 
 .client-box3 {
     min-height: 125px;
-    background-image: url("../../images/group_44.png");
+    background-image: url("../../images/group_44.webp");
     background-color: #fff;
     border: 1px solid #eee;
     background-position: center;
@@ -14075,13 +14075,13 @@ svg {
     box-shadow: 15.8px 28.5px 26px 2.6px rgba(0, 0, 0, 0.72);
     background-color: #00c3ff;
     border: none;
-    background-image: url("../../images/group_63.png");
+    background-image: url("../../images/group_63.webp");
 
 }
 
 .client-box4 {
     min-height: 125px;
-    background-image: url("../../images/group_45.png");
+    background-image: url("../../images/group_45.webp");
     background-color: #fff;
     border: 1px solid #eee;
     background-position: center;
@@ -14093,13 +14093,13 @@ svg {
     box-shadow: 15.8px 28.5px 26px 2.6px rgba(0, 0, 0, 0.72);
     background-color: #00c3ff;
     border: none;
-    background-image: url("../../images/group_64.png");
+    background-image: url("../../images/group_64.webp");
 
 }
 
 .client-box5 {
     min-height: 125px;
-    background-image: url("../../images/group_50.png");
+    background-image: url("../../images/group_50.webp");
     background-color: #fff;
     border: 1px solid #eee;
     background-position: center;
@@ -14111,13 +14111,13 @@ svg {
     box-shadow: 15.8px 28.5px 26px 2.6px rgba(0, 0, 0, 0.72);
     background-color: #00c3ff;
     border: none;
-    background-image: url("../../images/group_70.png");
+    background-image: url("../../images/group_70.webp");
 
 }
 
 .client-box6 {
     min-height: 125px;
-    background-image: url("../../images/group_51.png");
+    background-image: url("../../images/group_51.webp");
     background-color: #fff;
     border: 1px solid #eee;
     background-position: center;
@@ -14129,13 +14129,13 @@ svg {
     box-shadow: 15.8px 28.5px 26px 2.6px rgba(0, 0, 0, 0.72);
     background-color: #00c3ff;
     border: none;
-    background-image: url("../../images/group_68.png");
+    background-image: url("../../images/group_68.webp");
 
 }
 
 .client-box7 {
     min-height: 125px;
-    background-image: url("../../images/group_47.png");
+    background-image: url("../../images/group_47.webp");
     background-color: #fff;
     border: 1px solid #eee;
     background-position: center;
@@ -14147,13 +14147,13 @@ svg {
     box-shadow: 15.8px 28.5px 26px 2.6px rgba(0, 0, 0, 0.72);
     background-color: #00c3ff;
     border: none;
-    background-image: url("../../images/group_66.png");
+    background-image: url("../../images/group_66.webp");
 
 }
 
 .client-box8 {
     min-height: 125px;
-    background-image: url("../../images/group_58.png");
+    background-image: url("../../images/group_58.webp");
     background-color: #fff;
     border: 1px solid #eee;
     background-position: center;
@@ -14165,13 +14165,13 @@ svg {
     box-shadow: 15.8px 28.5px 26px 2.6px rgba(0, 0, 0, 0.72);
     background-color: #00c3ff;
     border: none;
-    background-image: url("../../images/group_65.png");
+    background-image: url("../../images/group_65.webp");
 
 }
 
 .client-box9 {
     min-height: 125px;
-    background-image: url("../../images/group_48.png");
+    background-image: url("../../images/group_48.webp");
     background-color: #fff;
     border: 1px solid #eee;
     background-position: center;
@@ -14183,7 +14183,7 @@ svg {
     box-shadow: 15.8px 28.5px 26px 2.6px rgba(0, 0, 0, 0.72);
     background-color: #00c3ff;
     border: none;
-    background-image: url("../../images/group_67.png");
+    background-image: url("../../images/group_67.webp");
 
 }
 
@@ -14526,7 +14526,7 @@ svg {
         border-radius: 5px;
     }
     .ins-card1{
-        background: url(../../images/m2.png);
+        background: url(../../images/m2.webp);
     }
 .box{
     height: 100px;
