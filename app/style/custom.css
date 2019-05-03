@@ -609,13 +609,13 @@ div.itemAuthorBlock p{
   max-width:92.66667%;flex: 0 0 92.66667%;
 }
 .one{
-  background: url('images/icons/1.png');
+  background: url('images/icons/1.webp');
 }
 .sec{
-  background: url('images/icons/2.png');
+  background: url('images/icons/2.webp');
 }
 .thir{
-  background: url('images/icons/3.png')
+  background: url('images/icons/3.webp')
 }
 .wid{
   max-width: 100px !important;
@@ -630,31 +630,31 @@ div.itemAuthorBlock p{
   padding: 20px;padding-bottom: 0;margin-left: 0;margin-right: 0
 }
 .one1{
-  background-image: url('/images/1.png');
+  background-image: url('/images/1.webp');
 }
 .two2{
-  background-image: url('/images/2.png');
+  background-image: url('/images/2.webp');
 }
 .thi3{
-  background-image: url('/images/3.png');
+  background-image: url('/images/3.webp');
 }
 .four4{
-  background-image: url(/images/4.png);min-height: 400px;
+  background-image: url(/images/4.webp);min-height: 400px;
 }
 .pad-40{
   padding: 40% 0;
 }
 .five5{
-  background-image: url(/images/5.png);min-height: 400px;
+  background-image: url(/images/5.webp);min-height: 400px;
 }
 .six6{
-  background-image: url(/images/6.png);
+  background-image: url(/images/6.webp);
 }
 .seven7{
-  background-image: url(/images/7.png);
+  background-image: url(/images/7.webp);
 }
 .eit8{
-  background-image: url(/images/8.png);min-height: 400px;padding: 50px
+  background-image: url(/images/8.webp);min-height: 400px;padding: 50px
 }
 .widt2{
   max-width: 200px !important;
@@ -663,7 +663,7 @@ div.itemAuthorBlock p{
   background: url('/images/industry_bg.svg');background-size: cover;background-repeat: no-repeat;
 }
 .qui{
-  background: url('/images/icons/sollution_bg.png');background-size: cover;object-fit:cover;background-repeat: no-repeat
+  background: url('/images/icons/sollution_bg.webp');background-size: cover;object-fit:cover;background-repeat: no-repeat
 }
 .spic{
   position: absolute;bottom:20%;right:5%;color: white;
