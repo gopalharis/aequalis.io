@@ -8843,7 +8843,7 @@ legend.scheduler-border {
     border-bottom-right-radius: 0;
     box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.18);
     /*background-blend-mode: , hue;*/
-    background: url('../../images/solutionrectangle.webp');
+    background: url('../../images/solutionrectangle.svg');
     /*background-position: center center;*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -10303,7 +10303,7 @@ input:focus :-ms-input-placeholder {
     font-weight: 500;
 }
 .bg-overlay {
-    background: linear-gradient(rgba(8, 73, 218, 0.73), rgba(4, 93, 255, 0.8)), url('../../images/coffee.jpg');
+    background: linear-gradient(rgba(8, 73, 218, 0.73), rgba(4, 93, 255, 0.8)), url('../../images/coffee.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
