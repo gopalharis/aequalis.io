@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a5862d7-3817-4030-9ebf-27eceebbbc6a" name="Default Changelist" comment="" />
+    <list default="true" id="9a5862d7-3817-4030-9ebf-27eceebbbc6a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/fonts/fontawesome-webfont3e6e.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/fontawesome-webfont3e6e.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/fontawesome-webfont3e6e.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/fontawesome-webfont3e6e.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/fontawesome-webfont3e6e.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/fontawesome-webfont3e6e.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/script/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/script/js/jquery.min.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -40,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="145">
+              <caret line="2920" lean-forward="true" selection-start-line="2920" selection-end-line="2920" />
               <folding>
                 <element signature="n#style#0;n#section#4;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#section#4;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -130,7 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sans-serif</find>
       <find>part</find>
       <find>.png</find>
       <find>#mobile</find>
@@ -160,6 +168,7 @@
       <find>poppins</find>
       <find>font-awesome</find>
       <find>fontawesome</find>
+      <find>.on</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -265,10 +274,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41987000" />
+    <option name="totallyTimeSpent" value="44170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24925596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -459,8 +469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="145">
+          <caret line="2920" lean-forward="true" selection-start-line="2920" selection-end-line="2920" />
           <folding>
             <element signature="n#style#0;n#section#4;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#section#4;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
