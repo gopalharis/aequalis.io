@@ -519,7 +519,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#side").hide();
   $("#toggle").click(function () {
-    $("#side").toggle();
+    // $("#side").toggle();
+    $("#side").show();
   });
   $("#alx-sidebar-menuid  a").click(function () {
     $("#side").hide();
