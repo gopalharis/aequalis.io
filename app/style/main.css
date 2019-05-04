@@ -11620,22 +11620,22 @@ color:white!important;
   margin-top: 6%!important;min-height: 100px!important;
 }
 .sidebar-bgk{
-  background-image: url('images/menu_bg.webp')!important;
+  background-image: url('/images/menu_bg.webp')!important;
 }
 .w-250-k{
   max-width: 250px;
 }
 .icon-bg1{
-"background: url('images/icons/4.webp')!important;
+"background: url('/images/icons/4.webp')!important;
 }
 .icon-bg2{
-  background: url('images/icons/5.webp')!important;
+  background: url('/images/icons/5.webp')!important;
 }
 .icon-bg3{
-  background: url('images/icons/6.webp');
+  background: url('/images/icons/6.webp');
 }
 .icon-bg4{
-  background: url('images/icons/7.webp');
+  background: url('/images/icons/7.webp');
 }
 .w-250{
   max-width: 250px!important;
