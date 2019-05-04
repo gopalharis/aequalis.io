@@ -10989,7 +10989,6 @@ svg {
     display: table;
     width: 100%;
 }
-
 .client .divTableRow {
     display: table-row;
 }
@@ -11410,4 +11409,181 @@ svg {
         font-weight: 600;
     }
 
+}
+
+
+.mobile .bg-k{
+  background: #06154d;
+}
+.mobile .w-100{
+  width:100%;
+}
+.mobile .m-15{
+  margin-top: 15%;
+}
+.mobile .text-center{
+  text-align:center!important;
+}
+.mobile .ml-20{margin-left:20px;}
+.mobile .page2-bg{
+  background: url('/images/industry_bg.svg')!important;
+}
+.mobile .industries-block{
+  padding:20px 20px 0px 20px!important;
+  margin-left: 0;margin-right: 0;
+}
+.mobile .w-150{
+  max-width: 150px;
+}
+.mobile  .page3-bg{
+  background: url('/images/industry_bg.svg')!important;background-size: cover;background-repeat: no-repeat;
+}
+.mobile #page3  #bg2-k{
+  background: url('/images/icons/sollution_bg.webp')!important;
+  background-size: cover!important;
+  object-fit:cover!important;
+  background-repeat: no-repeat!important;
+}
+.mobile #page3 .inner-text{
+  position: absolute!important;bottom:20%!important;right:5%!important;color: white!important;text-align: center!important ;padding: 20px!important;
+}
+.mobile .white{
+  color:#fff!important;
+}
+.mobile .p-30{
+padding: 30px
+}
+.mobile .pl-30{
+  padding-left: 30px
+}
+.mobile .bg-white{
+  background: #ffffff
+}
+.mobile .bottom-padding{
+  padding: 20px 37px;
+}
+.mobile .icon-bg{
+  background: url('/images/icons/1.webp');
+}
+.mobile .icon-bg2{
+  background: url('/images/icons/2.webp');
+}
+.mobile .icon-bg3{
+  background: url('/images/icons/3.webp');
+}
+.mobile .icon-bg4{
+  background: url('/images/icons/6.webp');
+}
+.mobile .icon-bg5{
+  background: url('/images/icons/5.webp');
+}
+.mobile .icon-bg6{
+  background: url('/images/icons/4.webp');
+}
+
+.mobile .icon-bg7{
+  background: url('/images/icons/7.webp');
+}
+.mobile .mt-3{
+  margin-top:3%;
+}
+
+.mobile .tri{
+  position: absolute;;
+  max-width:150px;
+}
+.mobile .pr-0{
+  padding-right: 0
+}
+.mobile .text-2{
+  font-size: 12px;margin-top: 2%;
+}
+.mobile .client-block{
+  background: url('/images/part_bg.webp')!important;background-size: cover;background-repeat: no-repeat;
+}
+.mobile .client-name{
+  font-size: 12px!important;color: #06d0fb!important;
+}
+.mobile .bg-image{
+  background: url('/images/industry_bg.svg');background-size: cover;background-repeat: no-repeat
+}
+.mobile .bg-color{
+  background: #020f3e;!important;
+}
+.mobile .padding-bg{
+  padding: 13px;padding-top: 24px
+}
+.mobile .color1{
+  color: #b7b7b7!important;
+}
+.mobile .bg-gradient{
+  background: linear-gradient(0deg, rgba(233, 233, 233, 0.84576), rgba(233, 233, 233, 0.84576))!important;
+}
+.mobile .svg-bg{
+  max-width: 300px!important;    margin-top: -49px!important;
+  margin-bottom: 4%!important;
+}
+.mobile .p-0{
+  padding:0;
+}
+.mobile .client .divTable{
+  padding-left: 30 px;
+}
+.mobile .video-play-button:before{
+  width:70px;height:70px;
+}
+
+.mobile .video-play-button:after{
+  width:70px;height:70px;
+}
+.mobile .p-10{
+  padding:10px;
+}
+.mobile .mtb-10{
+  margin: 10px 0;
+}
+.mobile .tri-footer{
+  max-width: 120px;right: 0;
+  bottom: 80px;
+}
+.mobile .career-flip-img{
+  background: url('images/carear_bg.svg');background-size: cover;background-repeat: no-repeat
+}
+.mobile .tri-bg1{
+  max-width: 130px;left: 0;
+  bottom: -31px;
+}
+.mobile .ind-bg{
+  background: url('images/industry_bg.svg');background-size: cover;background-repeat: no-repeat;
+}
+.mobile .prl-50{
+  padding: 0 50px;
+}
+.mobile .ind-bg1{
+  background: url('images/industry_bg.svg');background-size: contain;background-repeat: no-repeat
+}
+.mobile .webkit-box{
+  display: -webkit-box;
+}
+.mobile .w-14{
+  max-width: 14px;
+}
+.mobile .footer-padding{
+max-width: 600px;
+margin: 0 auto;
+}
+.mobile .w-140{
+  max-width: 140px;
+}
+.mobile .bg-gradient2{
+  background: linear-gradient(180deg, #06154D 0%, #486BFF 100%);
+}
+.mobile .sidebar-height{
+  min-height: 110px
+}
+.mobile .sidebar-height2{
+  min-height: 100px
+}
+.mobile .w-220{
+  width:220px;
 }

@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a5862d7-3817-4030-9ebf-27eceebbbc6a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/mobile.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/mobile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/script/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/script/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/style/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/style/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="997" column="54" selection-start-line="997" selection-start-column="54" selection-end-line="997" selection-end-column="54" />
+            <state relative-caret-position="300">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#3;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#3;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -78,15 +80,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/mobile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="44" column="10" lean-forward="true" selection-end-line="1475" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#article#2;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#article#5;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="111">
+              <caret line="216" column="34" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/style/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -94,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/script/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="8789">
+              <caret line="517" column="3" selection-start-line="517" selection-start-column="3" selection-end-line="532" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -103,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/style/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2686">
-              <caret line="158" column="1" selection-start-line="158" selection-start-column="1" selection-end-line="158" selection-end-column="1" />
+            <state relative-caret-position="196979">
+              <caret line="11587" column="14" selection-start-line="11587" selection-start-column="14" selection-end-line="11587" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -134,15 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sollution_bg</find>
-      <find>13.</find>
-      <find>m1.png</find>
-      <find>11.png</find>
-      <find>12</find>
-      <find>14.png</find>
-      <find>15.png</find>
-      <find>16.png</find>
-      <find>patner-bg.</find>
       <find>/7</find>
       <find>/7.png</find>
       <find>/2.png</find>
@@ -164,6 +162,15 @@
       <find>coffee</find>
       <find>mobile</find>
       <find>side</find>
+      <find>video-</find>
+      <find>.mobile .svg-bg</find>
+      <find>video-traia</find>
+      <find>.mobile</find>
+      <find>style</find>
+      <find>#side</find>
+      <find>humb</find>
+      <find>&lt;br&gt;</find>
+      <find>&lt;br</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -176,11 +183,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/style/style.css" />
-        <option value="$PROJECT_DIR$/app/script/js/script.js" />
         <option value="$PROJECT_DIR$/scripts/gulpTasks/image.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/mobile.html" />
         <option value="$PROJECT_DIR$/app/style/main.css" />
+        <option value="$PROJECT_DIR$/app/script/js/script.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
       </list>
     </option>
   </component>
@@ -195,6 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,20 +219,12 @@
               <item name="aequalis" type="b2602c69:ProjectViewProjectNode" />
               <item name="aequalis" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aequalis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aequalis" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,11 +233,14 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="E:/helius_frentend" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.stylelint" value="project" />
-    <property name="node.js.selected.package.eslint" value="D:/Libin/Aequalis/node_modules/eslint" />
-    <property name="node.js.selected.package.stylelint" value="D:/Libin/Aequalis/node_modules/stylelint" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -276,18 +279,20 @@
       <updated>1556796011634</updated>
       <workItem from="1556796015281" duration="4853000" />
       <workItem from="1556860087002" duration="7317000" />
-      <workItem from="1556886178937" duration="339000" />
+      <workItem from="1556886178937" duration="5451000" />
+      <workItem from="1556898359282" duration="4340000" />
+      <workItem from="1556945276227" duration="842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21851000" />
+    <option name="totallyTimeSpent" value="32145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24925596" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24925596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -301,7 +306,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32569557" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32569557" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -332,6 +337,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/app/script/js/script.js</url>
+          <line>518</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/script/magnific-popup/jquery.magnific-popup.min.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -343,9 +359,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/script/readmore/readmore.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/style/custom.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/script/main.js">
@@ -411,10 +424,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/index.html" />
+    <entry file="file://$PROJECT_DIR$/app/script/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8789">
+          <caret line="517" column="3" selection-start-line="517" selection-start-column="3" selection-end-line="532" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/style/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2686">
-          <caret line="158" column="1" selection-start-line="158" selection-start-column="1" selection-end-line="158" selection-end-column="1" />
+        <state relative-caret-position="196979">
+          <caret line="11587" column="14" selection-start-line="11587" selection-start-column="14" selection-end-line="11587" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -428,17 +448,24 @@
     <entry file="file://$PROJECT_DIR$/app/style/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/js/script.js">
+    <entry file="file://$PROJECT_DIR$/app/mobile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="111">
+          <caret line="216" column="34" selection-start-line="216" selection-start-column="31" selection-end-line="216" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/style/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="997" column="54" selection-start-line="997" selection-start-column="54" selection-end-line="997" selection-end-column="54" />
+        <state relative-caret-position="300">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#3;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#3;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -489,17 +516,6 @@
             <element signature="n#style#0;n#div#0;n#div#1;n#aside#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#aside#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#aside#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/mobile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="44" column="10" lean-forward="true" selection-end-line="1475" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#article#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#article#5;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
