@@ -520,8 +520,8 @@ $(document).ready(function () {
   $("#side").hide();
   $("#toggle").click(function () {
     alert();
-    // $("#side").toggle();
-    $("#side").show();
+     $("#side").toggle();
+    //$("#side").show();
   });
   $("#alx-sidebar-menuid  a").click(function () {
     $("#side").hide();
