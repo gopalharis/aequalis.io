@@ -1511,7 +1511,7 @@
       </div>
       <div class="col-xs-6 alx-text-right">
         <div class="alx-right-wrap">
-          <a class="alx-burger" onclick="toggle()" id="toggle"><span></span></a>
+          <a class="alx-burger"   id="toggle"><span></span></a>
         </div>
       </div>
     </div>
@@ -2163,10 +2163,9 @@
       <div class="col-md-1">
 
       </div>
-      <div class="col-md-11 space"
-      >
+      <div class="col-md-11 space">
         <div id="particles-js2"></div>
-        <img src="images/images/Tryangle-2.svg" class="flipleft  tri"  >
+        <img src="images/images/Tryangle-2.svg" class="flipleft  tri"   >
         <div class="row">
           <div class="col-md-4 pr-0">
             <div class="career1 wow  fadeIn">
@@ -2331,6 +2330,7 @@
 
 
   </article>
+ <div class="clearfix"></div>
   <article id="page6" class="wow  fadeIn alx-white-section  alx-bg-img bg-white"
   >
     <div class="row">
@@ -2915,7 +2915,9 @@
 </div>
 </div>
 <script src="script/main.js" defer="defer"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <script src="script/pagePiling/jquery.pagepiling.js"></script>
@@ -3478,11 +3480,12 @@
   $(document).ready(function () {
     $("#side").hide();
     $("#toggle").click(function () {
-      // $("#side").toggle();
-      $("#side").show();
+      $("#side").toggle();
+
     });
     $("#alx-sidebar-menuid  a").click(function () {
       $("#side").hide();
+      $("#toggle").removeClass( "on" );
       $("#toggle").show();
       //alert("in hide")
       //$( ".mobile #side" ).removeClass( "alx-aside-sidebar__open" );

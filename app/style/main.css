@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 #alx-preloader,#alx-preloader1 {
     position: fixed;
@@ -11489,29 +11489,29 @@ padding: 30px
 }
 
 .mobile .tri{
-  position: absolute;;
-  max-width:150px;
+  position: absolute!important;
+  max-width:150px!important;
 }
 .mobile .pr-0{
   padding-right: 0
 }
 .mobile .text-2{
-  font-size: 12px;margin-top: 2%;
+  font-size: 12px!important;margin-top: 2%!important;
 }
 .mobile .client-block{
-  background: url('/images/part_bg.webp')!important;background-size: cover;background-repeat: no-repeat;
+  background: url('/images/part_bg.webp')!important;background-size: cover!important;background-repeat: no-repeat!important;
 }
 .mobile .client-name{
   font-size: 12px!important;color: #06d0fb!important;
 }
 .mobile .bg-image{
-  background: url('/images/industry_bg.svg');background-size: cover;background-repeat: no-repeat
+  background: url('/images/industry_bg.svg')!important;background-size: cover!important;background-repeat: no-repeat!important;
 }
 .mobile .bg-color{
   background: #020f3e;!important;
 }
 .mobile .padding-bg{
-  padding: 13px;padding-top: 24px
+  padding: 13px!important;padding-top: 24px!important;
 }
 .mobile .color1{
   color: #b7b7b7!important;
@@ -11666,4 +11666,10 @@ color: #b7b7b7!important;
 .ind-img{background: url('/images/industry_bg.svg')!important;background-size: cover;background-repeat: no-repeat}
 .m-45{
   margin-top: 45px!important;
+}
+.slide-0{
+  width:0%;
+}
+.slide-100{
+  width:100%;
 }
