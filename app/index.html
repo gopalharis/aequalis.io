@@ -3479,13 +3479,14 @@
 <script>
   $(document).ready(function () {
     $("#side").hide();
+
+    $(".mobile #toggle").removeClass( "on" );
     $("#toggle").click(function () {
       $("#side").toggle();
 
     });
     $("#alx-sidebar-menuid  a").click(function () {
       $("#side").hide();
-      $("#toggle").removeClass( "on" );
       $("#toggle").show();
       //alert("in hide")
       //$( ".mobile #side" ).removeClass( "alx-aside-sidebar__open" );
