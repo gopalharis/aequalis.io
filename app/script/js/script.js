@@ -516,24 +516,6 @@ $(document).ready(function () {
     $(".window .alx-burger").removeClass("on");
   });
 });
-$(document).ready(function () {
-  $("#side").hide();
-  $("#toggle").click(function () {
-  $("#side").show();
-});
-
-
-
-
-
-  $("#alx-sidebar-menuid  a").click(function () {
-    $("#side").hide();
-    $("#toggle").show();
-    //alert("in hide")
-    //$( ".mobile #side" ).removeClass( "alx-aside-sidebar__open" );
-    // $( ".mobile #toggle" ).removeClass( "on" );
-  });
-});
 function goBack() {
   window.history.back();
 }
@@ -546,3 +528,21 @@ function isNumber(event) {
     event.preventDefault();
   }
 }
+
+
+$(document).ready(function () {
+  $("#side").hide();
+  $("#toggle" ).removeClass( "on" );
+
+  $("#toggle").click(function () {
+    $("#side").toggle();
+
+  });
+  $("#alx-sidebar-menuid  a").click(function () {
+    $("#side").hide();
+    $("#toggle").show();
+    //alert("in hide")
+    //$( ".mobile #side" ).removeClass( "alx-aside-sidebar__open" );
+    // $( ".mobile #toggle" ).removeClass( "on" );
+  });
+});
