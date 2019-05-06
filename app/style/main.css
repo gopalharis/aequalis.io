@@ -11571,7 +11571,7 @@ padding: 30px
   padding: 0 50px;
 }
 .mobile .ind-bg1{
-  background: url('/images/industry_bg.svg');background-size: contain;background-repeat: no-repeat
+  background: url('/images/industry_bg.svg');background-size: contain;background-repeat: no-repeat;
 }
 .mobile .webkit-box{
   display: -webkit-box;

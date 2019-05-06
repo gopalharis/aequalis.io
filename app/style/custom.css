@@ -609,13 +609,13 @@ div.itemAuthorBlock p{
   max-width:92.66667%;flex: 0 0 92.66667%;
 }
 .one{
-  background: url('images/icons/1.webp');
+  background: url('/images/icons/1.webp');
 }
 .sec{
-  background: url('images/icons/2.webp');
+  background: url('/images/icons/2.webp');
 }
 .thir{
-  background: url('images/icons/3.webp')
+  background: url('/images/icons/3.webp')
 }
 .wid{
   max-width: 100px !important;
