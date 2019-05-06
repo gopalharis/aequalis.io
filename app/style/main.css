@@ -11538,7 +11538,7 @@ padding: 30px
   padding:0;
 }
 .mobile .client .divTable{
-  padding-left: 30 px;
+  padding-left: 30px;
 }
 .mobile .video-play-button:before{
   width:70px;height:70px;
@@ -11558,20 +11558,20 @@ padding: 30px
   bottom: 80px;
 }
 .mobile .career-flip-img{
-  background: url('images/carear_bg.svg');background-size: cover;background-repeat: no-repeat
+  background: url('/images/carear_bg.svg');background-size: cover;background-repeat: no-repeat
 }
 .mobile .tri-bg1{
   max-width: 130px;left: 0;
   bottom: -31px;
 }
 .mobile .ind-bg{
-  background: url('images/industry_bg.svg');background-size: cover;background-repeat: no-repeat;
+  background: url('/images/industry_bg.svg');background-size: cover;background-repeat: no-repeat;
 }
 .mobile .prl-50{
   padding: 0 50px;
 }
 .mobile .ind-bg1{
-  background: url('images/industry_bg.svg');background-size: contain;background-repeat: no-repeat
+  background: url('/images/industry_bg.svg');background-size: contain;background-repeat: no-repeat
 }
 .mobile .webkit-box{
   display: -webkit-box;
@@ -11602,7 +11602,7 @@ margin: 0 auto;
   background: white;
 }
 .ind-bg-img{
-  background: url('images/industry_bg.svg');background-size: cover;background-repeat: no-repeat;
+  background: url('/images/industry_bg.svg');background-size: cover;background-repeat: no-repeat;
 }
 .padr-0{
   padding-right: 0;
