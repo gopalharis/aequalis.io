@@ -10146,8 +10146,9 @@ li, a {
 
 .right {
     bottom: 0;
+    /*position: fixed;*/
     position: absolute;
-    right: 0;
+     right: 0;
     max-width: 350px;
 }
 
@@ -11489,7 +11490,7 @@ padding: 30px
   background: url('/images/icons/5.webp');
 }
 .mobile .icon-bg6{
-  background: url('/images/icons/4.webp');
+  background: url('/images/icons/2.webp');
 }
 
 .mobile .icon-bg7{
@@ -11537,8 +11538,8 @@ padding: 30px
 .mobile .p-0{
   padding:0;
 }
-.mobile .client .divTable{
-  padding-left: 30px;
+.mobile .pl-35{
+  padding-left: 15px;
 }
 .mobile .video-play-button:before{
   width:70px;height:70px;
@@ -11626,7 +11627,7 @@ color:white!important;
   max-width: 250px;
 }
 .icon-bg1{
-"background: url('/images/icons/4.webp')!important;
+background: url('/images/icons/4.webp')!important;
 }
 .icon-bg2{
   background: url('/images/icons/5.webp')!important;
@@ -11684,3 +11685,48 @@ color: #b7b7b7!important;
 .slide-100{
   width:100%;
 }
+.pl-15{
+  padding-left: 15px;
+}
+.pl-7{
+padding-left:7px;}
+.pl-30{
+  padding-left:30px;
+}
+
+.indust .divTable{
+  margin-bottom:10px;
+}
+#side{
+  width:100%;
+}
+.pr-20k{
+  padding-right: 20px;
+
+}
+.pr-5{padding-right:5px;}
+@media (max-width:767px) {
+  .card2 p {
+    font-size: 12px;
+  }
+
+  .card2 h5 {
+    font-size: 14px;
+  }
+  .card p {
+    font-size: 12px;
+  }
+  .card2{
+    margin-bottom:30px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .ins-card-img{
+    width:135px;
+  }
+.mobile  .font-12-m{
+  font-size:15px;
+}
+}
+
