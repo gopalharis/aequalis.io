@@ -7194,7 +7194,7 @@ header .alx-logo {
 }
 
 .blog {
-  background: url('../../images/blog-bg.svg');
+  background: url('../images/svgImg/blog-bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -8857,7 +8857,7 @@ legend.scheduler-border {
   border-bottom-right-radius: 0;
   box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.18);
   /*background-blend-mode: , hue;*/
-  background: url('../../images/solutionrectangle.svg');
+  background: url('../images/svgImg/solutionrectangle.svg');
   /*background-position: center center;*/
   background-repeat: no-repeat;
   background-size: cover;
@@ -9613,7 +9613,7 @@ legend.scheduler-border {
   padding-left: 4%;
   padding-right: 4%;
   padding-bottom: 0;
-  /*background: url('../../images/blog-bg.svg');*/
+  /*background: url('../images/svgImg/blog-bg.svg');*/
   
 }
 
@@ -10139,6 +10139,10 @@ input, textarea {
 .brand-img {
   max-width: 110px;
 }
+.brand-img img{
+  display: block;
+  width: 100%;
+}
 
 .left {
   bottom: 0;
@@ -10160,13 +10164,15 @@ li, a {
 }
 
 .logo {
-  max-width: 600px;
+  max-width: 200px;
   margin: 4vh auto;
+  text-align: center;
 }
 
 .home-page {
   max-width: 600px;
   margin: 4vh auto;
+  text-align: center;
 }
 
 #pp-nav {
@@ -10810,7 +10816,7 @@ svg {
 
 .partner::before {
   content: "";
-  background-image: url('../../images/circle-bg.svg');
+  background-image: url('../images/svgImg/circle-bg.svg');
   background-repeat: no-repeat;
   background-size: contain;
   height: 103px;
@@ -10822,7 +10828,7 @@ svg {
 
 .alone::after {
   content: '';
-  background: url('../../images/circle-bg.svg');
+  background: url('../images/svgImg/circle-bg.svg');
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -11530,7 +11536,7 @@ svg {
 }
 
 .mobile .page2-bg {
-  background: url('/images/industry-bg.svg') !important;
+  background: url('../images/svgImg/industry-bg.svg') !important;
 }
 
 .mobile .industries-block {
@@ -11544,13 +11550,13 @@ svg {
 }
 
 .mobile .page3-bg {
-  background: url('/images/industry-bg.svg') !important;
+  background: url('../images/svgImg/industry-bg.svg') !important;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .mobile #page3 #bg2-k {
-  background: url('/images/icons/sollution_bg.webp') !important;
+  background-image: url('../images/icons/sollution_bg.webp') !important;
   background-size: cover !important;
   object-fit: cover !important;
   background-repeat: no-repeat !important;
@@ -11586,31 +11592,31 @@ svg {
 }
 
 .mobile .icon-bg {
-  background: url('/images/icons/1.webp');
+  background-image: url('../images/services/one.webp');
 }
 
 .mobile .icon-bg2 {
-  background: url('/images/icons/2.webp');
+  background-image: url('../images/services/two.webp');
 }
 
 .mobile .icon-bg3 {
-  background: url('/images/icons/3.webp');
+  background-image: url('../images/services/three.webp');
 }
 
 .mobile .icon-bg4 {
-  background: url('/images/icons/6.webp');
+  background-image: url('../images/services/six.webp');
 }
 
 .mobile .icon-bg5 {
-  background: url('/images/icons/5.webp');
+  background-image: url('../images/services/five.webp');
 }
 
 .mobile .icon-bg6 {
-  background: url('/images/icons/2.webp');
+  background-image: url('../images/icons/two.webp');
 }
 
 .mobile .icon-bg7 {
-  background: url('/images/icons/7.webp');
+  background-image: url('../images/icons/seven.webp');
 }
 
 .mobile .mt-3 {
@@ -11632,7 +11638,7 @@ svg {
 }
 
 .mobile .client-block {
-  background: url('/images/part_bg.webp') !important;
+  background-image: url('../images/part_bg.webp') !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
@@ -11643,7 +11649,7 @@ svg {
 }
 
 .mobile .bg-image {
-  background: url('/images/industry-bg.svg') !important;
+  background-image: url('../images/svgImg/industry-bg.svg') !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
@@ -11705,9 +11711,9 @@ svg {
 }
 
 .mobile .career-flip-img {
-  background: url('/images/carear-bg.svg');
+  background-image: url('../images/svgImg/carear-bg.svg');
   background-size: cover;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
 
 .mobile .tri-bg1 {
@@ -11717,7 +11723,7 @@ svg {
 }
 
 .mobile .ind-bg {
-  background: url('/images/industry-bg.svg');
+  background-image: url('../images/svgImg/industry-bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -11727,7 +11733,7 @@ svg {
 }
 
 .mobile .ind-bg1 {
-  background: url('/images/industry-bg.svg');
+  background-image: url('../images/svgImg/industry-bg.svg');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -11770,7 +11776,7 @@ svg {
 }
 
 .ind-bg-img {
-  background: url('/images/industry-bg.svg');
+  background-image: url('../images/svgImg/industry-bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -11797,7 +11803,7 @@ svg {
 }
 
 .sidebar-bgk {
-  background-image: url('/images/menu_bg.webp') !important;
+  background-image: url('../images/svgImg/menu_bg.webp') !important;
 }
 
 .w-250-k {
@@ -11805,19 +11811,19 @@ svg {
 }
 
 .icon-bg1 {
-  background: url('/images/icons/4.webp') !important;
+  background: url('../images/services/four.webp') !important;
 }
 
 .icon-bg2 {
-  background: url('/images/icons/5.webp') !important;
+  background: url('../images/services/five.webp') !important;
 }
 
 .icon-bg3 {
-  background: url('/images/icons/6.webp');
+  background: url('../images/services/six.webp');
 }
 
 .icon-bg4 {
-  background: url('/images/icons/7.webp');
+  background: url('../images/services/seven.webp');
 }
 
 .w-250 {
@@ -11835,7 +11841,7 @@ svg {
 }
 
 .industry-bgimg {
-  background: url('/images/industry-bg.svg') !important;
+  background-image: url('../images/svgImg/industry-bg.svg') !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;;
 }
@@ -11863,7 +11869,7 @@ svg {
 }
 
 .career-bgk {
-  background: url('/images/carear-bg.svg') !important;
+  background-image: url('../images/svgImg/carear-bg.svg') !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
@@ -11879,7 +11885,7 @@ svg {
 }
 
 .ind-img {
-  background: url('/images/industry-bg.svg') !important;
+  background: url('../images/svgImg/industry-bg.svg') !important;
   background-size: cover;
   background-repeat: no-repeat
 }
