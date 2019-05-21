@@ -1,6 +1,6 @@
-import webpack from 'webpack'
-import CONFIG from '../../package.json'
-const VARS = CONFIG.vars
+import webpack from 'webpack';
+import CONFIG from '../../package.json';
+const VARS = CONFIG.vars;
 
 const plugins = [
   new webpack.optimize.ModuleConcatenationPlugin(),
@@ -22,7 +22,7 @@ const plugins = [
     minimize: true,
     debug: false
   })
-]
+];
 
 module.exports = {
   devtool: 'cheap-module-source-map',
@@ -45,4 +45,4 @@ module.exports = {
     modules: ['node_modules', 'app'],
     extensions: ['.js', '.json']
   }
-}
+};

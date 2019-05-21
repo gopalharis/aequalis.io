@@ -1,6 +1,6 @@
-import CONFIG from '../package.json'
-const PATHS = CONFIG.paths
-const VARS = CONFIG.vars
+import CONFIG from '../package.json';
+const PATHS = CONFIG.paths;
+const VARS = CONFIG.vars;
 
 export default {
   base: PATHS.app.base,
@@ -11,7 +11,9 @@ export default {
   allSrcJS: `${PATHS.app.jsSrc}/**/*.js`,
   allFont: `${PATHS.app.font}/**/*`,
   allSCSS: `${PATHS.app.scss}/**/*`,
+  allSVG: `${PATHS.app.svg}/**/*.svg`,
   allIMAGE: `${PATHS.app.img}/**/*`,
+  svgOutput:`${PATHS.app.img}/sprite/`,
   scssRoot: PATHS.app.scss,
   scssSrc: `${PATHS.app.scss}/${VARS.scss}`,
   cssDevOutput: PATHS.app.css,
@@ -21,4 +23,4 @@ export default {
   jsProdOutput: PATHS.output.js,
   imageOutput: PATHS.output.img,
   fontOutput: PATHS.output.font
-}
+};

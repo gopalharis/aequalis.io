@@ -39,11 +39,11 @@ $(document).ready(function () {
             $('.about').val('');
           }, 3000);
         }
-      })
+      });
 //console.log( JSON.stringify(mailID))
 
     }
-  })
+  });
 });
 $(document).ready(function () {
   $('.successMsg1').hide();
@@ -56,9 +56,8 @@ $(document).ready(function () {
     var pattern = new RegExp("^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$");
     var result1 = pattern.test(email, name, phoneNo, about);
     if (result1) {
-
-
       var mailID1 = {emailID: email, Name: name, Number: phoneNo, About: about};
+      
       $.ajax({
         url: 'https://hookb.in/6JyKx9JpkxT2Z20mYwRK',
         type: 'POST',
@@ -78,11 +77,11 @@ $(document).ready(function () {
             $('.about1').val('');
           }, 3000);
         }
-      })
-//console.log( JSON.stringify(mailID))
+      });
+    //console.log( JSON.stringify(mailID))
 
     }
-  })
+  });
 });
 
 particlesJS("particles-js", {

@@ -1,7 +1,7 @@
-import gulp from 'gulp'
-import gutil from 'gulp-util'
-import critical from 'critical'
-import appPath from '../paths'
+import gulp from 'gulp';
+import gutil from 'gulp-util';
+import critical from 'critical';
+import appPath from '../paths';
 
 export default () => {
   return gulp
@@ -19,5 +19,5 @@ export default () => {
     .on('error', function(err) {
       gutil.log(gutil.colors.red(err.message))
     })
-    .pipe(gulp.dest(appPath.output))
-}
+    .pipe(gulp.dest(appPath.output));
+};

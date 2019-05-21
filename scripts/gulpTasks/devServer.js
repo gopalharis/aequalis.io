@@ -1,7 +1,7 @@
-import browserSync from 'browser-sync'
-import appPath from '../paths'
-import CONFIG from '../../package.json'
-const PROXY = CONFIG.proxy
+import browserSync from 'browser-sync';
+import appPath from '../paths';
+import CONFIG from '../../package.json';
+const PROXY = CONFIG.proxy;
 
 export default () => {
   if (PROXY.open) {
@@ -18,9 +18,9 @@ export default () => {
         baseDir: appPath.base
       },
       options: {
-        reloadDelay: 250
+        reloadDelay: 2500
       },
       notify: false
-    })
+    });
   }
-}
+};

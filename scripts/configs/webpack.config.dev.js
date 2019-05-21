@@ -1,5 +1,5 @@
-import CONFIG from '../../package.json'
-const VARS = CONFIG.vars
+import CONFIG from '../../package.json';
+const VARS = CONFIG.vars;
 
 module.exports = {
   output: {
@@ -19,4 +19,4 @@ module.exports = {
     modules: ['node_modules', 'app'],
     extensions: ['.js', '.json']
   }
-}
+};

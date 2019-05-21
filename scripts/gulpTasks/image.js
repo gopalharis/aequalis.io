@@ -1,7 +1,7 @@
-import gulp from 'gulp'
-import plumber from 'gulp-plumber'
-import imagemin from 'gulp-imagemin'
-import appPath from '../paths'
+import gulp from 'gulp';
+import plumber from 'gulp-plumber';
+import imagemin from 'gulp-imagemin';
+import appPath from '../paths';
 
 export default () => {
   return gulp
@@ -11,12 +11,12 @@ export default () => {
       imagemin.gifsicle({ interlaced: true }),
       imagemin.jpegtran({ progressive: true }),
       imagemin.optipng({ optimizationLevel: 5 }),
-      imagemin.svgo({
-        plugins: [
-          { removeViewBox: true },
-          { cleanupIDs: false }
-        ]
-      })
+      // imagemin.svgo({
+      //   plugins: [
+      //     { removeViewBox: true },
+      //     { cleanupIDs: false }
+      //   ]
+      // })
     ]))
-    .pipe(gulp.dest(appPath.imageOutput))
+    .pipe(gulp.dest(appPath.allIMAGE));
 }

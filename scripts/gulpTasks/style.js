@@ -1,13 +1,13 @@
-import gulp from 'gulp'
-import gutil from 'gulp-util'
-import plumber from 'gulp-plumber'
-import sass from 'gulp-sass'
-import concat from 'gulp-concat'
-import autoprefixer from 'gulp-autoprefixer'
-import minifyCSS from 'gulp-clean-css'
-import browserSync from 'browser-sync'
-import appPath from '../paths'
-import CONFIG from '../../package.json'
+import gulp from 'gulp';
+import gutil from 'gulp-util';
+import plumber from 'gulp-plumber';
+import sass from 'gulp-sass';
+import concat from 'gulp-concat';
+import autoprefixer from 'gulp-autoprefixer';
+import minifyCSS from 'gulp-clean-css';
+import browserSync from 'browser-sync';
+import appPath from '../paths';
+import CONFIG from '../../package.json';
 
 const autoPrefixBrowserList = [
   'last 2 version',

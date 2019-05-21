@@ -18,6 +18,7 @@
   "paths": {
     "app": {
       "base": "app",
+      "svg": "app/images/svg/",
       "img": "app/images",
       "font": "app/fonts",
       "js": "app/script",
