@@ -848,8 +848,9 @@ div.itemAuthorBlock p {
 
 .bg-img {
   background-image: url('../images/sprite/svg-sprite.svg#carear-bg');
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-position: top -30px left;
 }
 
 .mt-10 {
