@@ -14,7 +14,7 @@ export default () => {
       imagemin.svgo({
         plugins: [
           { removeViewBox: true },
-          { cleanupIDs: false }
+          { cleanupIDs: true }
         ]
       })
     ]))

@@ -30,6 +30,18 @@ body, html {
   color: #3e61ff;
 }
 
+.svg{
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.svg use {
+  display: flex;
+}
+
 /* ------------------------------------------------------------------------------- */
 /*  8. Blog
 /* ------------------------------------------------------------------------------- */
@@ -676,8 +688,7 @@ div.itemAuthorBlock p {
  background-image: url('../images/services/three.webp');
 }
 
-.left.wid {
-  max-height: 35px;
+.wid {
   max-width: 100px !important;
 }
 
@@ -735,9 +746,7 @@ div.itemAuthorBlock p {
   padding: 50px;
 }
 
-.widt2.right,
 .widt2 {
-  height: 67px;
   max-width: 200px !important;
 }
 
