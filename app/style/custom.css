@@ -30,7 +30,8 @@ body, html {
   color: #3e61ff;
 }
 
-.svg{
+.svg,
+svg.svg{
   width: 100%;
   height: inherit;
   display: flex;
