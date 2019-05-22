@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="491px" height="158px" viewBox="0 0 491 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
-    <title>tryangle</title>
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Tryangle</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="home_page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="tryangle">
-            <g id="Group-24" transform="translate(0.000000, 72.000000)">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tryangle" fill-rule="nonzero">
+            <g id="group03" transform="translate(0.000000, 72.000000)">
                 <g id="Group-26">
                     <polygon id="Path-11" fill="#03CAFF" points="0 84.7493024 147.874471 9.09494702e-13 147.874471 84.7493024"></polygon>
-                    <polygon id="Path-11" fill="#486BFF" transform="translate(220.937235, 42.374651) scale(-1, 1) translate(-220.937235, -42.374651) " points="147 84.7493024 294.874471 9.09494702e-13 294.874471 84.7493024"></polygon>
+                    <polygon id="Path-11" fill="#486BFF" transform="translate(220.937234, 42.374651) scale(-1, 1) translate(-220.937234, -42.374651) " points="146.999999 84.7493024 294.87447 9.09494702e-13 294.87447 84.7493024"></polygon>
                 </g>
             </g>
-            <g id="Group-23" transform="translate(220.000000, 56.000000)">
+            <g id="group02" transform="translate(220.000000, 56.000000)">
                 <g id="Group-25">
                     <polygon id="Path-11-Copy" fill="#03CAFF" points="0.0767731147 57.8531593 96 9.09494702e-13 96 100.882884 75.1971639 100.882884"></polygon>
-                    <polygon id="Path-11-Copy-2" fill="#3245AE" transform="translate(144.476743, 50.513367) scale(-1, 1) translate(-144.476743, -50.513367) " points="95.9534862 56.5 192.953486 9.09494702e-13 193 101.026734 177.638686 101.026734"></polygon>
+                    <polygon id="Path-11-Copy-2" fill="#3245AE" transform="translate(144.476743, 50.513367) scale(-1, 1) translate(-144.476743, -50.513367) " points="95.953486 56.5 192.953486 9.09494702e-13 193 101.026734 177.638686 101.026734"></polygon>
                     <polygon id="Path-16" fill="#03CAFF" points="191.993615 56 270.752672 101 110.8753 101"></polygon>
                 </g>
             </g>
-            <g id="Group-23-Copy-4" transform="translate(171.000000, 0.000000)">
+            <g id="group01" transform="translate(171.000000, 0.000000)">
                 <polygon id="Path-11-Copy" fill="#03CAFF" points="0 45.5 46 19 46 72"></polygon>
                 <polygon id="Path-11-Copy-2" fill="#3245AE" transform="translate(74.000000, 26.500000) scale(-1, 1) translate(-74.000000, -26.500000) " points="51 26.5 97 9.09494702e-13 97 53"></polygon>
             </g>

@@ -5,7 +5,7 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="home_page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-4-Copy-7" transform="translate(260.000000, 88.500000) scale(-1, 1) translate(-260.000000, -88.500000) ">
+        <g id="Group-4-Copy-7" transform="translate(260.000000, 88.500000) scale(1, 1) translate(-260.000000, -88.500000) ">
             <polygon id="Triangle" fill="#486BFF" points="205 176.5 520 0 520 176.5"></polygon>
             <g id="Group-28" transform="translate(57.000000, 83.000000)">
                 <polygon id="Triangle" fill="#03CAFF" transform="translate(223.500000, 46.750000) rotate(-180.000000) translate(-223.500000, -46.750000) " points="156 6.83120227e-13 291 4.54747351e-13 291 93.5"></polygon>

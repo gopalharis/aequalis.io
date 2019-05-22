@@ -7637,7 +7637,7 @@ header .alx-logo {
   top: 0;
   right: 0;
   bottom: 0;
- background-image: url('../../images/menu_bg.svg');
+ background-image: url('../../images/sprite/svg-sprite.svg#menu_bg');
   z-index: 900;
   max-width: 100%;
   width: 100%;
@@ -8775,16 +8775,21 @@ header .alx-logo {
 }*/
 
 .icon-box {
+  
   border: 1px solid #eeee;
   width: 100px;
   height: 100px;
+  display: flex;
+  justify-content: center;
   text-align: center;
   padding: 7px;
   border-radius: 3.5px;
   box-shadow: 0 15.5px 17px 0 rgba(62, 97, 255, 0.4);
   background-color: #ffffff;
 }
-
+.icon-box .icon{
+  max-width: 100%;
+}
 .bottom-section {
  background-image: url('../../images/serviceBg2.webp');
   background-repeat: no-repeat;
@@ -8855,11 +8860,11 @@ legend.scheduler-border {
   border-radius: 5px;
   border-bottom-right-radius: 0;
   box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.18);
-  /*background-blend-mode: , hue;*/
- background-image: url('../images/sprite/svg-sprite.svg#solutionrectangle');
-  /*background-position: center center;*/
+  background-blend-mode: hue;
+  background-image: url('../images/sprite/svg-sprite.svg#solutionrectangle');
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200%;
   margin: 0 auto;
   min-height: 320px;
   padding: 15px;
@@ -10138,7 +10143,7 @@ input, textarea {
 .brand-img {
   max-width: 110px;
   display: block;
-  padding: 30px;
+  padding: 20px;
 }
 .brand-img img{
   display: block;
@@ -10150,6 +10155,7 @@ input, textarea {
   position: fixed;
   left: 0;
   max-width: 350px;
+  max-height: 120px;
 }
 
 li, a {
@@ -10162,8 +10168,8 @@ li, a {
   position: absolute;
   right: 0;
   max-width: 350px;
+  max-height: 112px;
 }
-
 .logo {
   max-width: 200px;
   margin: 4vh auto;
@@ -11090,6 +11096,7 @@ svg {
   
   .icon {
     max-width: 60px;
+    display: block;
     margin: 21px auto;
     /* border-bottom: 1px solid #eee; */
   }
@@ -11803,7 +11810,7 @@ svg {
 }
 
 .sidebar-bgk {
-  background-image: url('../images/menu_bg.webp') !important;
+  background-image: url('../images/sprite/svg-sprite.svg#menu_bg') !important;
 }
 
 .w-250-k {

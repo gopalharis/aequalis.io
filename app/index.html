@@ -35,16 +35,22 @@
   <div id="alx-preloader">
     <div class="container">
       <div class="home-page">
-        <a> <img src="images/svgImg/logo.png" class="logo"></a>
+        <a> <img src="images/sprite/svg-sprite.svg#logo" class="logo" alt="logotype"></a>
       </div>
     </div>
-    <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="left">
-    <img src="images/sprite/svg-sprite.svg#Tryangle" class="right">
+    <svg class="left">
+        <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+    </svg>
+    <!-- <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="left"> -->
+    <!-- <img src="images/sprite/svg-sprite.svg#Tryangle" class="right"> -->
+    <svg class="right">
+        <use xlink:href="images/sprite/svg-sprite.svg#Tryangle"></use>
+    </svg>
   </div>
   <div class="sidenav">
     <div>
       <a href="#home" class="brand-img">
-          <img  src="images/svgImg/logo.png" alt="Mumbrass"/>
+          <img  src="images/sprite/svg-sprite.svg#logo" alt="Mumbrass"/>
       </a>
       <div class="alx-right-wrap">
         <a class="alx-burger"><span></span></a>
@@ -53,8 +59,7 @@
     </div>
   </div>
   <div id="alx-pagepiling">
-    <section class="alx-white-section pp-scrollable alx-bg-img slideInLeft dark"
-             >
+    <section class="alx-white-section pp-scrollable alx-bg-img slideInLeft dark">
       <div class="row">
         <div class="col-md-1">
         </div>
@@ -73,9 +78,6 @@
                     class="white typewriter ">Trust  </span>
                   in our clients valuechain.</p>
                 <a href="#industries" class="btn btn-outline-secondary">EXCITED?
-                  <svg xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="images/sprite/svg-sprite.svg#right-wh" class="arow"></use>
-                  </svg>
                   <img src="images/sprite/svg-sprite.svg#right-wh" class="arow">
                 </a>
               </div>
@@ -1428,7 +1430,7 @@
       </div>
     </div>
   </div>
-  <aside class="alx-aside-sidebar alx-aside-sidebar__dark alx-bg-img sidebar-bgk" id="alx-sidebar" style="background-image: url('images/svgImg/menu_bg.webp')!important;" >
+  <aside class="alx-aside-sidebar alx-aside-sidebar__dark alx-bg-img sidebar-bgk" id="alx-sidebar" style="background-image: url('images/sprite/svg-sprite.svg#menu_bg')!important;" >
     <a class="alx-burger alx-burger__open white-k" href="#"  >
       <span class="close-white white-k"   ></span></a>
     <div class="alx-vertical-heading"><span class="vl"></span>building trust in your valuechain</div>
@@ -1483,7 +1485,7 @@
   <div class="navbar-fixed">
     <div class="row">
       <div class="col-xs-6">
-        <img class="brand-img" src="images/images/logo.png" alt="Mumbrass"/>
+        <img class="brand-img" src="images/sprite/svg-sprite.svg#logo" alt="Mumbrass"/>
       </div>
       <div class="col-xs-6 alx-text-right">
         <div class="alx-right-wrap">
