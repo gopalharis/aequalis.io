@@ -676,7 +676,8 @@ div.itemAuthorBlock p {
  background-image: url('../images/services/three.webp');
 }
 
-.wid {
+.left.wid {
+  max-height: 35px;
   max-width: 100px !important;
 }
 
@@ -734,7 +735,9 @@ div.itemAuthorBlock p {
   padding: 50px;
 }
 
+.widt2.right,
 .widt2 {
+  height: 67px;
   max-width: 200px !important;
 }
 

@@ -7637,7 +7637,7 @@ header .alx-logo {
   top: 0;
   right: 0;
   bottom: 0;
- background-image: url('../../images/sprite/svg-sprite.svg#menu_bg');
+  background-image: url('../../images/sprite/svg-sprite.svg#menu_bg');
   z-index: 900;
   max-width: 100%;
   width: 100%;
@@ -7651,7 +7651,9 @@ header .alx-logo {
   transition: all .7s ease-in-out;
   padding: 140px 40px 80px 40px;
 }
-
+.alx-aside-sidebar .right{
+  max-height: 85px;
+}
 .alx-aside-sidebar::-webkit-scrollbar-track {
   background-color: #fff;
 }

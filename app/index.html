@@ -41,8 +41,6 @@
     <svg class="left">
         <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
     </svg>
-    <!-- <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="left"> -->
-    <!-- <img src="images/sprite/svg-sprite.svg#Tryangle" class="right"> -->
     <svg class="right">
         <use xlink:href="images/sprite/svg-sprite.svg#Tryangle"></use>
     </svg>
@@ -55,7 +53,9 @@
       <div class="alx-right-wrap">
         <a class="alx-burger"><span></span></a>
       </div>
-      <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="left wid">
+      <svg class="left wid">
+          <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+      </svg>
     </div>
   </div>
   <div id="alx-pagepiling">
@@ -247,9 +247,10 @@
               </a>
             </div>
           </div>
-          <div>
-            <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="flip right widt2">
-          </div>
+            <svg class="flip right widt2">
+                <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+            </svg>
+            <!-- <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="flip right widt2"> -->
         </div>
       </div>
 
@@ -1384,11 +1385,12 @@
               <div class="clearfix"></div>
               <div style="margin-top: 45px">
 
-                <a onclick="goBack()" class="btn btn-outline-secondary white-k" ><img
-                  src="images/left-arrow.webp" class="arow1">Go Back
+                <a onclick="goBack()" class="btn btn-outline-secondary white-k" >
+                  <img src="images/left-arrow.webp" class="arow1">Go Back
                 </a>
-                <a href="#home" class="btn btn-outline-secondary">Home page<img
-                        src="images/sprite/svg-sprite.svg#right-wh" class="arow"></a>
+                <a href="#home" class="btn btn-outline-secondary">Home page
+                  <img src="images/sprite/svg-sprite.svg#right-wh" class="arow">
+                </a>
               </div>
             </div>
 
@@ -1473,7 +1475,10 @@
       </ul>
 
     </div>
-    <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="right flip w-250-k" >
+    <svg class="right flip w-250-k">
+      <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+    </svg>
+    <!-- <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="right flip w-250-k" > -->
   </aside>
   <div class="alx-aside-sidebar__overlay"></div>
 
