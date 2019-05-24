@@ -10,13 +10,13 @@ export default () => {
     .pipe(imagemin([
       imagemin.gifsicle({ interlaced: true }),
       imagemin.jpegtran({ progressive: true }),
-      imagemin.optipng({ optimizationLevel: 5 }),
-      imagemin.svgo({
-        plugins: [
-          { removeViewBox: true },
-          { cleanupIDs: true }
-        ]
-      })
+      imagemin.optipng({ optimizationLevel: 5 })
+      // imagemin.svgo({ //gulp build has error
+      //   plugins: [
+      //     { removeViewBox: true },
+      //     { cleanupIDs: true }
+      //   ]
+      // })
     ]))
     .pipe(gulp.dest(appPath.imageOutput));
 }

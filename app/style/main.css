@@ -6838,6 +6838,17 @@ img.mfp-img {
   margin: 10px;
 }
 
+.btn-outline-secondary .arow{
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-bottom-width: 5px;
+  border-top-width: 5px;
+  border-left: 5px solid #fff;
+}
+
 body {
   font-size: 1em;
   min-width: 320px;
@@ -10030,7 +10041,8 @@ section {
   max-width: 350px;
   height: 100vh;
   object-fit: cover;
-  
+  background: url("../images/offwite.webp") no-repeat top center;
+  background-size: cover;
 }
 
 b,
@@ -10374,7 +10386,12 @@ input:focus :-ms-input-placeholder {
 }
 
 .flag {
-  max-width: 31px;
+  display: block;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .video-footer {
@@ -11081,7 +11098,8 @@ svg {
     padding-top: 20px;
   }
   
-  .foot img {
+  .foot img ,
+  .foot svg{
     max-width: 25px;
     margin-right: 20px;
   }
@@ -11318,6 +11336,11 @@ svg {
   
   .about-uscontent p {
     font-size: 13px;
+  }
+  .about-uscontent .icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
   }
   
   .font-small img {
