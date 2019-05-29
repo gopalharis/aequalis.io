@@ -29,6 +29,51 @@
   <link rel="stylesheet" href="style/custom.css">
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/font-awesome.min.css">
+  <script>
+    ;(function(window, document){
+      'use strict';
+      var file     = 'images/sprite/svg-sprite.svg',
+        revision = 1;
+      if(!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect)
+        return true;
+      var isLocalStorage = 'localStorage' in window && window['localStorage'] !== null,
+        request,
+        data,
+        insertIT = function(){
+          var insertSprite = document.getElementById('svg-placeholder');
+          insertSprite.insertAdjacentHTML('beforeend', data);
+        },
+        insert = function(){
+          if( document.body ) insertIT();
+          else document.addEventListener('DOMContentLoaded', insertIT);
+        };
+
+      if(isLocalStorage && localStorage.getItem('inlineSVGrev') == revision){
+        data = localStorage.getItem('inlineSVGdata');
+        if(data){
+          insert();
+          return true;
+        }
+      }
+
+      try{
+        request = new XMLHttpRequest();
+        request.open('GET', file, true);
+        request.onload = function(){
+          if(request.status >= 200 && request.status < 400){
+            data = request.responseText;
+            insert();
+            if(isLocalStorage){
+              localStorage.setItem('inlineSVGdata',  data);
+              localStorage.setItem('inlineSVGrev',   revision);
+            }
+          }
+        }
+        request.send();
+      }
+      catch(e){}
+    }(window, document) );
+  </script>
 </head>
 <body>
 <div class="alx-scroll-wrap window">
@@ -37,19 +82,19 @@
       <div class="home-page">
         <a class="logo">
           <svg class="svg" preserveAspectRatio="none" >
-            <use xlink:href="images/sprite/svg-sprite.svg#logo"></use>
+            <use xlink:href="#logo"></use>
           </svg>
         </a>
       </div>
     </div>
     <div class="left">
       <svg class="svg" preserveAspectRatio="none" width="350px" height="120px">
-        <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+        <use xlink:href="#Tryangle-2"></use>
       </svg>
     </div>
     <div class="right">
       <svg class="svg" preserveAspectRatio="none" width="350px" height="110px">
-        <use xlink:href="images/sprite/svg-sprite.svg#Tryangle"></use>
+        <use xlink:href="#Tryangle"></use>
       </svg>
     </div>
   
@@ -58,16 +103,16 @@
     <div>
       <a href="#home" class="brand-img">
         <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-          <use xlink:href="images/sprite/svg-sprite.svg#logo"></use>
+          <use xlink:href="#logo"></use>
         </svg>
-        <!-- <img src="images/sprite/svg-sprite.svg#logo" alt="Mumbrass"/>-->
+        <!-- <img src="#logo" alt="Mumbrass"/>-->
       </a>
       <div class="alx-right-wrap">
         <a class="alx-burger"><span></span></a>
       </div>
       <div class="left wid">
         <svg class="svg" preserveAspectRatio="none" width="100px" height="35px">
-          <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+          <use xlink:href="#Tryangle-2"></use>
         </svg>
       </div>
     
@@ -141,7 +186,7 @@
                     <div class="alx-portfolio-item-details">
                       <div class="icon">
                         <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#interview-wh"></use>
+                          <use xlink:href="#interview-wh"></use>
                         </svg>
                       </div>
                       <h4>Ensure the right candidate is hired</h4>
@@ -161,7 +206,7 @@
                     <div class="alx-portfolio-item-details health">
                       <div class="icon">
                         <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#health-wh"></use>
+                          <use xlink:href="#health-wh"></use>
                         </svg>
                       </div>
                       <h4>Certify identity and ownership of health data</h4>
@@ -183,7 +228,7 @@
                     <div class="alx-portfolio-item-details finance">
                       <div class="icon">
                         <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#hand-wh"></use>
+                          <use xlink:href="#hand-wh"></use>
                         </svg>
                       </div>
                       <h4>Verify, validate, transact and record</h4>
@@ -201,7 +246,7 @@
                     <div class="alx-portfolio-item-details life pad-40">
                       <div class="icon">
                         <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#medicine-wh"></use>
+                          <use xlink:href="#medicine-wh"></use>
                         </svg>
                       </div>
                       <h4>Verify authenticity, credibility and compliance to statutory laws</h4>
@@ -222,7 +267,7 @@
                     <div class="alx-portfolio-item-details food pad-40">
                       <div class="icon">
                         <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#burger-wh"></use>
+                          <use xlink:href="#burger-wh"></use>
                         </svg>
                       </div>
                       <h4>Guarantee 100% food safety</h4>
@@ -240,7 +285,7 @@
                     <div class="alx-portfolio-item-details manifac">
                       <div class="icon">
                         <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#manufactoring-wh"></use>
+                          <use xlink:href="#manufactoring-wh"></use>
                         </svg>
                       </div>
                       <h4>Self executing contract based on quality parameters</h4>
@@ -262,7 +307,7 @@
                     <div class="alx-portfolio-item-details bublic">
                       <div class="icon">
                         <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#donation-wh"></use>
+                          <use xlink:href="#donation-wh"></use>
                         </svg>
                       </div>
                       <h4>Establish transparent governance</h4>
@@ -281,7 +326,7 @@
                     <div class="alx-portfolio-item-details bublic pad-40">
                       <div class="icon">
                         <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#rice-wh"></use>
+                          <use xlink:href="#rice-wh"></use>
                         </svg>
                       </div>
                       <h4>Tracking the journey of produce from farm to shop shelf</h4>
@@ -295,7 +340,7 @@
           </div>
           <div class="right flip widt2">
             <svg class="svg" preserveAspectRatio="none" width="350px" height="110px">
-              <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+              <use xlink:href="#Tryangle-2"></use>
             </svg>
           </div>
           
@@ -328,7 +373,7 @@
                           <div class="icon-box">
                             <div class="icon">
                               <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                <use xlink:href="images/sprite/svg-sprite.svg#blockchain"></use>
+                                <use xlink:href="#blockchain"></use>
                               </svg>
                             </div>
                           </div>
@@ -349,7 +394,7 @@
                           <div class="icon-box">
                             <div class="icon">
                               <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                <use xlink:href="images/sprite/svg-sprite.svg#blockchain"></use>
+                                <use xlink:href="#blockchain"></use>
                               </svg>
                             </div>
                           </div>
@@ -384,7 +429,7 @@
                           <div class="icon-box">
                             <div class="icon">
                               <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                <use xlink:href="images/sprite/svg-sprite.svg#hired"></use>
+                                <use xlink:href="#hired"></use>
                               </svg>
                             </div>
                           </div>
@@ -404,7 +449,7 @@
                           <div class="icon-box">
                             <div class="icon">
                               <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                <use xlink:href="images/sprite/svg-sprite.svg#hired"></use>
+                                <use xlink:href="#hired"></use>
                               </svg>
                             </div>
                           </div>
@@ -440,7 +485,7 @@
                           <div class="icon-box">
                             <div class="icon">
                               <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                <use xlink:href="images/sprite/svg-sprite.svg#money"></use>
+                                <use xlink:href="#money"></use>
                               </svg>
                             </div>
                           </div>
@@ -460,7 +505,7 @@
                           <div class="icon-box">
                             <div class="icon">
                               <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                <use xlink:href="images/sprite/svg-sprite.svg#money"></use>
+                                <use xlink:href="#money"></use>
                               </svg>
                             </div>
                           </div>
@@ -494,7 +539,7 @@
                           <div class="icon-box">
                             <div class="icon">
                               <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                <use xlink:href="images/sprite/svg-sprite.svg#bitcoin"></use>
+                                <use xlink:href="#bitcoin"></use>
                               </svg>
                             </div>
                           </div>
@@ -514,7 +559,7 @@
                           <div class="icon-box">
                             <div class="icon">
                               <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                <use xlink:href="images/sprite/svg-sprite.svg#bitcoin"></use>
+                                <use xlink:href="#bitcoin"></use>
                               </svg>
                             </div>
                           </div>
@@ -548,7 +593,7 @@
                           <div class="icon-box">
                             <div class="icon">
                               <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                <use xlink:href="images/sprite/svg-sprite.svg#meeting-1"></use>
+                                <use xlink:href="#meeting-1"></use>
                               </svg>
                             </div>
                           </div>
@@ -568,7 +613,7 @@
                           <div class="icon-box">
                             <div class="icon">
                               <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                <use xlink:href="images/sprite/svg-sprite.svg#meeting-1"></use>
+                                <use xlink:href="#meeting-1"></use>
                               </svg>
                             </div>
                           </div>
@@ -602,7 +647,7 @@
                           <div class="icon-box">
                             <div class="icon">
                               <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                <use xlink:href="images/sprite/svg-sprite.svg#teamwork"></use>
+                                <use xlink:href="#teamwork"></use>
                               </svg>
                             </div>
                           </div>
@@ -622,7 +667,7 @@
                           <div class="icon-box">
                             <div class="icon">
                               <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                <use xlink:href="images/sprite/svg-sprite.svg#teamwork"></use>
+                                <use xlink:href="#teamwork"></use>
                               </svg>
                             </div>
                           </div>
@@ -690,7 +735,7 @@
                     <div class="box">
                       <div class="water one lazy">
                         <svg class="svg" preserveAspectRatio="none" height="50px" >
-                          <use xlink:href="images/sprite/svg-sprite.svg#coding"></use>
+                          <use xlink:href="#coding"></use>
                         </svg>
                         <p>Development</p>
                       </div>
@@ -704,7 +749,7 @@
                     <div class="box">
                       <div class="water sec lazy">
                         <svg class="svg" preserveAspectRatio="none" height="50px" >
-                          <use xlink:href="images/sprite/svg-sprite.svg#puzzle"></use>
+                          <use xlink:href="#puzzle"></use>
                         </svg>
                         <p>Solutions</p>
                       </div>
@@ -718,7 +763,7 @@
                     <div class="box">
                       <div class="water thir lazy">
                         <svg class="svg" preserveAspectRatio="none" height="50px" >
-                          <use xlink:href="images/sprite/svg-sprite.svg#plan"></use>
+                          <use xlink:href="#plan"></use>
                         </svg>
                         <p>Business case, POC and MVP</p>
                       </div>
@@ -731,7 +776,7 @@
                   <div class="box mt-10">
                     <div class="water icon-bg3">
                       <svg class="svg" preserveAspectRatio="none" height="50px" >
-                        <use xlink:href="images/sprite/svg-sprite.svg#solution"></use>
+                        <use xlink:href="#solution"></use>
                       </svg>
                       <span>Integration</span>
                     </div>
@@ -743,7 +788,7 @@
                     <div class="box">
                       <div class="water lazy icon-bg2">
                         <svg class="svg" preserveAspectRatio="none" height="50px" >
-                          <use xlink:href="images/sprite/svg-sprite.svg#chains"></use>
+                          <use xlink:href="#chains"></use>
                         </svg>
                         <p>Blockchain Competency </p>
                       </div>
@@ -755,7 +800,7 @@
                   <div class="box">
                     <div class="water lazy icon-bg3">
                       <svg class="svg" preserveAspectRatio="none" height="50px" >
-                        <use xlink:href="images/sprite/svg-sprite.svg#meeting"></use>
+                        <use xlink:href="#meeting"></use>
                       </svg>
                       <p>Consulting</p>
                     </div>
@@ -765,17 +810,17 @@
                   <div class="box">
                     <div class="water lazy icon-bg4">
                       <svg class="svg" preserveAspectRatio="none" height="50px" >
-                        <use xlink:href="images/sprite/svg-sprite.svg#management"></use>
+                        <use xlink:href="#management"></use>
                       </svg>
                       <p>Managed Services</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="flip right w-250" > -->
+              <!-- <img src="#Tryangle-2" class="flip right w-250" > -->
               <div class="flip right widt2">
                 <svg class="svg" preserveAspectRatio="none" width="250px" height="85px">
-                  <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+                  <use xlink:href="#Tryangle-2"></use>
                 </svg>
               </div>
             </div>
@@ -783,7 +828,6 @@
         </div>
       </div>
     </section>
-    
     <section class="alx-white-section pp-scrollable alx-bg-img bg-whitek">
       
       <div class="row">
@@ -793,10 +837,10 @@
         <div class="col-md-11 space"
              data-wow-duration="3s" data-wow-delay="10s">
           <div id="particles-js1"></div>
-<!--          <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="flipleft tri-img1">-->
+<!--          <img src="#Tryangle-2" class="flipleft tri-img1">-->
           <div class="flipleft tri-img1">
             <svg class="svg" preserveAspectRatio="none" width="350px" height="120px">
-              <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+              <use xlink:href="#Tryangle-2"></use>
             </svg>
           </div>
           <div class="row">
@@ -969,16 +1013,15 @@
             </div>
           </div>
           
-<!--          <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="flip right" style="max-width: 250px;">-->
+<!--          <img src="#Tryangle-2" class="flip right" style="max-width: 250px;">-->
           <div class="flip right">
             <svg class="svg" preserveAspectRatio="none" width="250px" height="85px">
-              <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+              <use xlink:href="#Tryangle-2"></use>
             </svg>
           </div>
         </div>
       </div>
     </section>
-    
     <section class="alx-white-section  pp-scrollable alx-bg-img" style="background: white">
       <div class="row">
         <div class="col-md-1"></div>
@@ -1098,7 +1141,6 @@
         </div>
       </div>
     </section>
-    
     <section class="alx-white-section pp-scrollable alx-bg-img bg-whitek">
       <div class="row">
         <div class="col-md-1"></div>
@@ -1133,10 +1175,10 @@
                   complex manufacturing collection and distribution systems or free flow of fiat and
                   crypto currencies.</p>
               </div>
-              <!--<img src="images/sprite/svg-sprite.svg#video-traia" class="w-100">-->
+              <!--<img src="#video-traia" class="w-100">-->
               <div class="w-100">
                 <svg class="svg" preserveAspectRatio="none" width="100%" height="85px">
-                  <use xlink:href="images/sprite/svg-sprite.svg#video-traia"></use>
+                  <use xlink:href="#video-traia"></use>
                 </svg>
               </div>
             </div>
@@ -1179,7 +1221,7 @@
                 <div class="col-md-3">
                   <div class="icon">
                     <svg class="svg" preserveAspectRatio="none" width="40px" height="40px">
-                      <use xlink:href="images/sprite/svg-sprite.svg#goal"></use>
+                      <use xlink:href="#goal"></use>
                     </svg>
                   </div>
                   
@@ -1189,7 +1231,7 @@
                 <div class="col-md-3">
                   <div class="icon">
                     <svg class="svg" preserveAspectRatio="none" width="40px" height="40px">
-                      <use xlink:href="images/sprite/svg-sprite.svg#air"></use>
+                      <use xlink:href="#air"></use>
                     </svg>
                   </div>
                   <p><span> 4Months</span></p>
@@ -1198,7 +1240,7 @@
                 <div class="col-md-3">
                   <div class="icon">
                     <svg class="svg" preserveAspectRatio="none" width="40px" height="40px">
-                      <use xlink:href="images/sprite/svg-sprite.svg#time"></use>
+                      <use xlink:href="#time"></use>
                     </svg>
                   </div>
                   <p><span>98%</span></p>
@@ -1207,7 +1249,7 @@
                 <div class="col-md-3">
                   <div class="icon">
                     <svg class="svg" preserveAspectRatio="none" width="40px" height="40px">
-                      <use xlink:href="images/sprite/svg-sprite.svg#tick"></use>
+                      <use xlink:href="#tick"></use>
                     </svg>
                   </div>
                   <p><span>100%</span></p>
@@ -1230,7 +1272,7 @@
             <div class="col-md-6">
               <div class="flip right">
                 <svg class="svg" preserveAspectRatio="none" width="250px" height="85px">
-                  <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+                  <use xlink:href="#Tryangle-2"></use>
                 </svg>
               </div>
             </div>
@@ -1238,7 +1280,6 @@
         </div>
       </div>
     </section>
-    
     <section class="alx-white-section pp-scrollable alx-bg-img bg-whitek">
       <div class="row">
         <div class="col-md-1"></div>
@@ -1263,32 +1304,30 @@
             <li class="backcode"><a href="#coming-soon">Why Aequalis?</a></li>
             <li><a href="#coming-soon">Our People</a></li>
           </ul>
-          <!-- <img src="images/sprite/svg-sprite.svg#Tryangle" class="right" style="max-width: 250px;right: 50%">-->
+          <!-- <img src="#Tryangle" class="right" style="max-width: 250px;right: 50%">-->
           <div class="right" style=" right: 50%">
             <svg class="svg" preserveAspectRatio="none" width="250px" height="80px">
-              <use xlink:href="images/sprite/svg-sprite.svg#Tryangle"></use>
+              <use xlink:href="#Tryangle"></use>
             </svg>
           </div>
-          <!-- <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="flip right" style="max-width: 250px;">-->
+          <!-- <img src="#Tryangle-2" class="flip right" style="max-width: 250px;">-->
           <div class="flip right">
             <svg class="svg" preserveAspectRatio="none" width="250px" height="85px">
-              <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+              <use xlink:href="#Tryangle-2"></use>
             </svg>
           </div>
         </div>
       </div>
     </section>
-    </section>
-    
     <section class="alx-white-section pp-scrollable alx-bg-img"
-             style="background: url('images/sprite/svg-sprite.svg#industry-bg');
+             style="background: url('#industry-bg');
              background-size: cover;
              background-repeat: no-repeat">
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-11 space blog zoomInRight" data-wow-duration="3s" data-wow-delay="10s">
-          <!--<img src="images/sprite/svg-sprite.svg#Tryangle-2" class="rotate" style="max-width: 150px">-->
-          <!--<img src="images/sprite/svg-sprite.svg#Tryangle-2"  style="max-width: 250px">-->
+          <!--<img src="#Tryangle-2" class="rotate" style="max-width: 150px">-->
+          <!--<img src="#Tryangle-2"  style="max-width: 250px">-->
           <div class="clip">
             <div class="row">
               <div class="col-md-6">
@@ -1439,7 +1478,7 @@
                   <div class="col-md-2">
                     <div class="flag">
                       <svg class="svg" preserveAspectRatio="none" >
-                        <use xlink:href="images/sprite/svg-sprite.svg#india_2"></use>
+                        <use xlink:href="#india_2"></use>
                       </svg>
                     </div>
                   </div>
@@ -1449,7 +1488,7 @@
                   <div class="col-md-2">
                     <div class="flag">
                       <svg class="svg" preserveAspectRatio="none" >
-                        <use xlink:href="images/sprite/svg-sprite.svg#united_states_1"></use>
+                        <use xlink:href="#united_states_1"></use>
                       </svg>
                     </div>
                   </div>
@@ -1471,42 +1510,42 @@
                     <div class="col-md-2">
                       <a href="#coming-soon">
                         <svg class="svg" preserveAspectRatio="none" width="25px" height="25px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#fa"></use>
+                          <use xlink:href="#fa"></use>
                         </svg>
                       </a>
                     </div>
                     <div class="col-md-2">
                       <a href="#coming-soon">
                         <svg class="svg" preserveAspectRatio="none" width="25px" height="25px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#tw"></use>
+                          <use xlink:href="#tw"></use>
                         </svg>
                       </a>
                     </div>
                     <div class="col-md-2">
                       <a href="#coming-soon">
                         <svg class="svg" preserveAspectRatio="none" width="25px" height="25px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#link"></use>
+                          <use xlink:href="#link"></use>
                         </svg>
                       </a>
                     </div>
                     <div class="col-md-2">
                       <a href="#coming-soon">
                         <svg class="svg" preserveAspectRatio="none" width="25px" height="25px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#in"></use>
+                          <use xlink:href="#in"></use>
                         </svg>
                       </a>
                     </div>
                     <div class="col-md-2">
                       <a href="#coming-soon">
                         <svg class="svg" preserveAspectRatio="none" width="25px" height="25px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#wh"></use>
+                          <use xlink:href="#wh"></use>
                         </svg>
                       </a>
                     </div>
                     <div class="col-md-2">
                       <a href="#coming-soon">
                         <svg class="svg" preserveAspectRatio="none" width="25px" height="25px">
-                          <use xlink:href="images/sprite/svg-sprite.svg#yo"></use>
+                          <use xlink:href="#yo"></use>
                         </svg>
                       </a>
                     </div>
@@ -1567,10 +1606,10 @@
             
             </div>
           </div>
-          <!--<img src="images/sprite/svg-sprite.svg#Tryangle-2" class="left">-->
+          <!--<img src="#Tryangle-2" class="left">-->
           <div class="left">
             <svg class="svg" preserveAspectRatio="none" width="250px" height="85px">
-              <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+              <use xlink:href="#Tryangle-2"></use>
             </svg>
           </div>
         </div>
@@ -1606,10 +1645,7 @@
         </div>
       
       </div>
-    
-    
     </section>
-    
     <div class="component_area">
       <div class="container">
         <div class="row">
@@ -1640,8 +1676,7 @@
       </div>
     </div>
   </div>
-  <aside class="alx-aside-sidebar alx-aside-sidebar__dark alx-bg-img sidebar-bgk" id="alx-sidebar"
-         style="background-image: url('images/sprite/svg-sprite.svg#menu_bg')!important;">
+  <aside class="alx-aside-sidebar alx-aside-sidebar__dark alx-bg-img sidebar-bgk" id="alx-sidebar">
     <a class="alx-burger alx-burger__open white-k" href="#">
       <span class="close-white white-k"></span></a>
     <div class="alx-vertical-heading"><span class="vl"></span>building trust in your valuechain</div>
@@ -1686,14 +1721,13 @@
     </div>
     <div class="flip right">
       <svg class="svg" preserveAspectRatio="none" width="250px" height="85px">
-        <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+        <use xlink:href="#Tryangle-2"></use>
       </svg>
     </div>
     
-    <!-- <img src="images/sprite/svg-sprite.svg#Tryangle-2" class="right flip w-250-k" > -->
+    <!-- <img src="#Tryangle-2" class="right flip w-250-k" > -->
   </aside>
   <div class="alx-aside-sidebar__overlay"></div>
-
 </div>
 
 <div class="mobile">
@@ -1703,7 +1737,7 @@
         <div class="col-xs-6">
           <div class="brand-img">
             <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-              <use xlink:href="images/sprite/svg-sprite.svg#logo"></use>
+              <use xlink:href="#logo"></use>
             </svg>
           </div>
         </div>
@@ -1720,11 +1754,11 @@
         <div class="col-md-12">
           <div id="alx-particles1"></div>
           <div class="bounceInUp">
-            <img src="images/sprite/svg-sprite.svg#mobile-build" class="w-100 m-15">
+            <img src="#mobile-build" class="w-100 m-15">
             
             <div class="alx-heading text-center">
               
-              <img src="images/sprite/svg-sprite.svg#aequalis-wh-logo" class="aeq jackInTheBox">
+              <img src="#aequalis-wh-logo" class="aeq jackInTheBox">
               <div class="alx-heading__zigzag ">
                 <div class="wow bounceInUp ">
                   <p>By establishing proof of identity, tamper proofing and traceability, businesses
@@ -1775,7 +1809,7 @@
                     <div class="ins-card">
                       <div class="ins-card-img">
                         <div class="">
-                          <img src="images/sprite/svg-sprite.svg#interview-wh" class="icon">
+                          <img src="#interview-wh" class="icon">
                           <h4>Ensure the right candidate is hired</h4>
                         </div>
                       </div>
@@ -1788,7 +1822,7 @@
                       <div class="ins-card-img">
                         
                         <div class="">
-                          <img src="images/sprite/svg-sprite.svg#health-wh" class="icon">
+                          <img src="#health-wh" class="icon">
                           <h4>Certify identity and ownership of health data</h4>
                         </div>
                       </div>
@@ -1800,7 +1834,7 @@
                     <div class="ins-card ins-card1">
                       <div class="ins-card-img">
                         <div class="">
-                          <img src="images/sprite/svg-sprite.svg#health-wh" class="icon">
+                          <img src="#health-wh" class="icon">
                           <h4>Certify identity and ownership of health data</h4>
                         </div>
                       </div>
@@ -1814,7 +1848,7 @@
                       <div class="ins-card-img">
                         
                         <div class="">
-                          <IMG src="images/sprite/svg-sprite.svg#hand-wh" class="icon">
+                          <IMG src="#hand-wh" class="icon">
                           <h4>Verify, validate, transact and record</h4>
                         </div>
                       </div>
@@ -1826,7 +1860,7 @@
                     <div class="ins-card ins-card1">
                       <div class="ins-card-img">
                         <div class="">
-                          <IMG src="images/sprite/svg-sprite.svg#medicine-wh" class="icon">
+                          <IMG src="#medicine-wh" class="icon">
                           <h4>Verify authenticity, credibility and compliance to statutory
                             laws</h4>
                         </div>
@@ -1840,7 +1874,7 @@
                       <div class="ins-card-img">
                         
                         <div class="">
-                          <img src="images/sprite/svg-sprite.svg#burger-wh" class="icon">
+                          <img src="#burger-wh" class="icon">
                           <h4>Guarantee 100% food safety</h4>
                         </div>
                       </div>
@@ -1852,7 +1886,7 @@
                     <div class="ins-card ins-card1">
                       <div class="ins-card-img">
                         <div class="">
-                          <img src="images/sprite/svg-sprite.svg#manufacturing-wh"
+                          <img src="#manufacturing-wh"
                                class="icon">
                           <h4>Self executing contract based on quality parameters</h4>
                         </div>
@@ -1867,7 +1901,7 @@
                     <div class="ins-card ins-card1">
                       <div class="ins-card-img">
                         <div class="">
-                          <img src="images/sprite/svg-sprite.svg#donation-wh" class="icon">
+                          <img src="#donation-wh" class="icon">
                           <h4>Establish transparent governance</h4>
                         </div>
                       </div>
@@ -1880,7 +1914,7 @@
                     <div class="ins-card ins-card1">
                       <div class="ins-card-img">
                         <div class="">
-                          <img src="images/sprite/svg-sprite.svg#rice-wh" class="icon">
+                          <img src="#rice-wh" class="icon">
                           <h4>Tracking the journey of produce from farm to shop shelf</h4>
                         </div>
                       </div>
@@ -1893,10 +1927,10 @@
               </div>
             </div>
           </div>
-          <!--<img src="images/sprite/svg-sprite.svg#Tryangle-2" class="flip right w-150">-->
+          <!--<img src="#Tryangle-2" class="flip right w-150">-->
           <div class="flip right w-150">
             <svg class="svg" preserveAspectRatio="none" width="150px" height="50px">
-              <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+              <use xlink:href="#Tryangle-2"></use>
             </svg>
           </div>
         </div>
@@ -1931,7 +1965,7 @@
                               <div class="icon-box">
                                 <div class="icon">
                                   <svg class="svg" preserveAspectRatio="none">
-                                    <use xlink:href="images/sprite/svg-sprite.svg#blockchain"></use>
+                                    <use xlink:href="#blockchain"></use>
                                   </svg>
                                 </div>
                               </div>
@@ -1953,7 +1987,7 @@
                               <div class="icon-box">
                                 <div class="icon">
                                   <svg class="svg" preserveAspectRatio="none">
-                                    <use xlink:href="images/sprite/svg-sprite.svg#blockchain"></use>
+                                    <use xlink:href="#blockchain"></use>
                                   </svg>
                                 </div>
                               </div>
@@ -1989,7 +2023,7 @@
                               <div class="icon-box">
                                 <div class="icon">
                                   <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                    <use xlink:href="images/sprite/svg-sprite.svg#hired"></use>
+                                    <use xlink:href="#hired"></use>
                                   </svg>
                                 </div>
                               </div>
@@ -2011,7 +2045,7 @@
                               <div class="icon-box">
                                 <div class="icon">
                                   <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                    <use xlink:href="images/sprite/svg-sprite.svg#hired"></use>
+                                    <use xlink:href="#hired"></use>
                                   </svg>
                                 </div>
                               </div>
@@ -2047,7 +2081,7 @@
                               <div class="icon-box">
                                 <div class="icon">
                                   <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                    <use xlink:href="images/sprite/svg-sprite.svg#money"></use>
+                                    <use xlink:href="#money"></use>
                                   </svg>
                                 </div>
                               </div>
@@ -2069,7 +2103,7 @@
                               <div class="icon-box">
                                 <div class="icon">
                                   <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                    <use xlink:href="images/sprite/svg-sprite.svg#money"></use>
+                                    <use xlink:href="#money"></use>
                                   </svg>
                                 </div>
                               </div>
@@ -2105,7 +2139,7 @@
                               <div class="icon-box">
                                 <div class="icon">
                                   <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                    <use xlink:href="images/sprite/svg-sprite.svg#bitcoin"></use>
+                                    <use xlink:href="#bitcoin"></use>
                                   </svg>
                                 </div>
                               </div>
@@ -2126,7 +2160,7 @@
                               <div class="icon-box">
                                 <div class="icon">
                                   <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                    <use xlink:href="images/sprite/svg-sprite.svg#bitcoin"></use>
+                                    <use xlink:href="#bitcoin"></use>
                                   </svg>
                                 </div>
                               </div>
@@ -2161,7 +2195,7 @@
                               <div class="icon-box">
                                 <div class="icon">
                                   <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                    <use xlink:href="images/sprite/svg-sprite.svg#meeting-1"></use>
+                                    <use xlink:href="#meeting-1"></use>
                                   </svg>
                                 </div>
                               </div>
@@ -2183,7 +2217,7 @@
                               <div class="icon-box">
                                 <div class="icon">
                                   <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                    <use xlink:href="images/sprite/svg-sprite.svg#meeting-1"></use>
+                                    <use xlink:href="#meeting-1"></use>
                                   </svg>
                                 </div>
                               </div>
@@ -2219,7 +2253,7 @@
                               <div class="icon-box">
                                 <div class="icon">
                                   <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                    <use xlink:href="images/sprite/svg-sprite.svg#teamwork"></use>
+                                    <use xlink:href="#teamwork"></use>
                                   </svg>
                                 </div>
                               </div>
@@ -2240,7 +2274,7 @@
                               <div class="icon-box">
                                 <div class="icon">
                                   <svg class="svg" preserveAspectRatio="none" width="60px" height="60px">
-                                    <use xlink:href="images/sprite/svg-sprite.svg#teamwork"></use>
+                                    <use xlink:href="#teamwork"></use>
                                   </svg>
                                 </div>
                               </div>
@@ -2311,7 +2345,7 @@
                       <div class="box">
                         <div class="water icon-bg">
                           <svg class="svg" preserveAspectRatio="none" height="50px" >
-                            <use xlink:href="images/sprite/svg-sprite.svg#coding"></use>
+                            <use xlink:href="#coding"></use>
                           </svg>
                           <p>Development</p>
                         </div>
@@ -2330,7 +2364,7 @@
                         <div class="water lazy icon-bg2">
   
                           <svg class="svg" preserveAspectRatio="none" height="50px" >
-                            <use xlink:href="images/sprite/svg-sprite.svg#puzzle"></use>
+                            <use xlink:href="#puzzle"></use>
                           </svg>
                           <p>Solutions</p>
                         </div>
@@ -2341,7 +2375,7 @@
                       <div class="box">
                         <div class="water lazy icon-bg3">
                           <svg class="svg" preserveAspectRatio="none" height="50px" >
-                            <use xlink:href="images/sprite/svg-sprite.svg#plan"></use>
+                            <use xlink:href="#plan"></use>
                           </svg>
                           <p>Business case, POC & MVP</p>
                         </div>
@@ -2357,7 +2391,7 @@
                       <div class="water lazy icon-bg4">
                         <div class="box">
                           <svg class="svg" preserveAspectRatio="none" height="50px" >
-                            <use xlink:href="images/sprite/svg-sprite.svg#meeting"></use>
+                            <use xlink:href="#meeting"></use>
                           </svg>
                           <p>Consulting</p>
                         </div>
@@ -2373,7 +2407,7 @@
                       <div class="box">
                         <div class="water lazy icon-bg5">
                           <svg class="svg" preserveAspectRatio="none" height="50px" >
-                            <use xlink:href="images/sprite/svg-sprite.svg#chains"></use>
+                            <use xlink:href="#chains"></use>
                           </svg>
                           <p>Blockchain
                             Competency </p>
@@ -2385,7 +2419,7 @@
                       <div class="box mt-3 mt-3">
                         <div class="water icon-bg6">
                           <svg class="svg" preserveAspectRatio="none" height="50px" >
-                            <use xlink:href="images/sprite/svg-sprite.svg#solution"></use>
+                            <use xlink:href="#solution"></use>
                           </svg>
                           <p>Integration</p>
                         </div>
@@ -2402,7 +2436,7 @@
                       <div class="box">
                         <div class="water lazy icon-bg7">
                           <svg class="svg" preserveAspectRatio="none" height="50px" >
-                            <use xlink:href="images/sprite/svg-sprite.svg#management"></use>
+                            <use xlink:href="#management"></use>
                           </svg>
                           <p>Managed
                             Services</p>
@@ -2414,10 +2448,10 @@
                   </div>
                 </div>
               </div>
-              <!--<img src="images/sprite/svg-sprite.svg#Tryangle-2" class="flip right w-150">-->
+              <!--<img src="#Tryangle-2" class="flip right w-150">-->
               <div class="flip right w-150">
                 <svg class="svg" preserveAspectRatio="none" width="150px" height="50px">
-                  <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+                  <use xlink:href="#Tryangle-2"></use>
                 </svg>
               </div>
             </div>
@@ -2438,7 +2472,7 @@
           <div id="particles-js2"></div>
           <div class="flipleft tri">
             <svg class="svg" preserveAspectRatio="none" width="350px" height="110px">
-              <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+              <use xlink:href="#Tryangle-2"></use>
             </svg>
           </div>
           
@@ -2613,7 +2647,7 @@
           
           <div class="flip right w-150">
             <svg class="svg" preserveAspectRatio="none" width="150px" height="50px">
-              <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+              <use xlink:href="#Tryangle-2"></use>
             </svg>
           </div>
         </div>
@@ -2743,10 +2777,10 @@
                 <h2 class="be-the-change white">About us</h2>
                 <div class="row">
                   <div class="col-xs-4">
-                    <!--<img src="images/sprite/svg-sprite.svg#video-rectangle" class="react lazy">-->
+                    <!--<img src="#video-rectangle" class="react lazy">-->
                     <div class="react lazy">
                       <svg class="svg" preserveAspectRatio="none" width="250px" height="85px">
-                        <use xlink:href="images/sprite/svg-sprite.svg#video-rectangle"></use>
+                        <use xlink:href="#video-rectangle"></use>
                       </svg>
                     </div>
                   </div>
@@ -2763,10 +2797,10 @@
                   crypto currencies.</p>
               
               </div>
-              <!-- <img src="images/sprite/svg-sprite.svg#video-traia" class=" w-100">-->
+              <!-- <img src="#video-traia" class=" w-100">-->
               <div class="w-100">
                 <svg class="svg" preserveAspectRatio="none" width="100%" height="85px">
-                  <use xlink:href="images/sprite/svg-sprite.svg#video-traia"></use>
+                  <use xlink:href="#video-traia"></use>
                 </svg>
               </div>
             </div>
@@ -2808,7 +2842,7 @@
               <div class="col-xs-3">
                 <div class="icon">
                   <svg class="svg" preserveAspectRatio="none" width="40px" height="40px">
-                    <use xlink:href="images/sprite/svg-sprite.svg#goal"></use>
+                    <use xlink:href="#goal"></use>
                   </svg>
                 </div>
                 <p><span> 100%</span></p>
@@ -2818,7 +2852,7 @@
               <div class="col-xs-3">
                 <div class="icon">
                   <svg class="svg" preserveAspectRatio="none" width="40px" height="40px">
-                    <use xlink:href="images/sprite/svg-sprite.svg#air"></use>
+                    <use xlink:href="#air"></use>
                   </svg>
                 </div>
                 <p class="mtb-10"><span> 4Months</span></p>
@@ -2827,7 +2861,7 @@
               <div class="col-xs-3">
                 <div class="icon">
                   <svg class="svg" preserveAspectRatio="none" width="40px" height="40px">
-                    <use xlink:href="images/sprite/svg-sprite.svg#time"></use>
+                    <use xlink:href="#time"></use>
                   </svg>
                 </div>
                 <p><span>98%</span></p>
@@ -2836,7 +2870,7 @@
               <div class="col-xs-3">
                 <div class="icon">
                   <svg class="svg" preserveAspectRatio="none" width="40px" height="40px">
-                    <use xlink:href="images/sprite/svg-sprite.svg#tick"></use>
+                    <use xlink:href="#tick"></use>
                   </svg>
                 </div>
                 <p><span>100%</span></p>
@@ -2847,7 +2881,7 @@
           
           <div class="flip right w-150">
             <svg class="svg" preserveAspectRatio="none" width="150px" height="50px">
-              <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+              <use xlink:href="#Tryangle-2"></use>
             </svg>
           </div>
           <ul class="nav navbar-nav footer1 video-footer fadeInLeft">
@@ -2886,10 +2920,10 @@
           </div>
           <div class="clearfix"></div>
           
-          <!--<img src="images/sprite/svg-sprite.svg#Tryangle" class="right tri-bg1">-->
+          <!--<img src="#Tryangle" class="right tri-bg1">-->
           <div class="right tri-bg1">
             <svg class="svg" preserveAspectRatio="none" width="150px" height="50px">
-              <use xlink:href="images/sprite/svg-sprite.svg#Tryangle"></use>
+              <use xlink:href="#Tryangle"></use>
             </svg>
           </div>
         </div>
@@ -3055,7 +3089,7 @@
                   <div class="col-xs-4">
                     <div class="flag">
                       <svg class="svg" preserveAspectRatio="none" >
-                        <use xlink:href="images/sprite/svg-sprite.svg#india_2"></use>
+                        <use xlink:href="#india_2"></use>
                       </svg>
                     </div>
                   </div>
@@ -3065,7 +3099,7 @@
                   <div class="col-xs-4">
                     <div class="flag">
                       <svg class="svg" preserveAspectRatio="none" >
-                        <use xlink:href="images/sprite/svg-sprite.svg#united_states_1"></use>
+                        <use xlink:href="#united_states_1"></use>
                       </svg>
                     </div>
                   </div>
@@ -3148,12 +3182,12 @@
         <div class="row footer-padding ">
           <div class="col-xs-2">
             <svg class="svg" preserveAspectRatio="none" width="25px" height="25px">
-              <use xlink:href="images/sprite/svg-sprite.svg#fa"></use>
+              <use xlink:href="#fa"></use>
             </svg>
           </div>
           <div class="col-xs-2">
             <svg class="svg" preserveAspectRatio="none" width="25px" height="25px">
-              <use xlink:href="images/sprite/svg-sprite.svg#tw"></use>
+              <use xlink:href="#tw"></use>
             </svg>
           </div>
           <div class="col-xs-2">
@@ -3161,17 +3195,17 @@
           </div>
           <div class="col-xs-2">
             <svg class="svg" preserveAspectRatio="none" width="25px" height="25px">
-              <use xlink:href="images/sprite/svg-sprite.svg#in"></use>
+              <use xlink:href="#in"></use>
             </svg>
           </div>
           <div class="col-xs-2">
             <svg class="svg" preserveAspectRatio="none" width="25px" height="25px">
-              <use xlink:href="images/sprite/svg-sprite.svg#wh"></use>
+              <use xlink:href="#wh"></use>
             </svg>
           </div>
           <div class="col-xs-2">
             <svg class="svg" preserveAspectRatio="none" width="25px" height="25px">
-              <use xlink:href="images/sprite/svg-sprite.svg#yo"></use>
+              <use xlink:href="#yo"></use>
             </svg>
           </div>
         </div>
@@ -3181,7 +3215,7 @@
       </div>
       <div class="w-140">
         <svg class="svg" preserveAspectRatio="none" width="140px" height="85px">
-          <use xlink:href="images/sprite/svg-sprite.svg#Tryangle-2"></use>
+          <use xlink:href="#Tryangle-2"></use>
         </svg>
       </div>
     </article>
@@ -3266,20 +3300,19 @@
 <script src="script/js/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="script/main.js"></script>
-
 <script>
-  new WOW().init()
-</script>
+  // new WOW().init()
 
-<script>
   // $(function() {
   //   $('.lazy').Lazy();
   // });
-</script>
-<script>
+
   // $(document).ready(function () {
   //    $('#mobile').load('mobile.html');
   // })
+  
 </script>
+<div id="svg-placeholder" style="display:none;"></div>
+</div>
 </body>
 </html>

@@ -1,8 +1,8 @@
 
 $(document).ready(function () {
+
   $('#alx-pagepiling').pagepiling({
     anchors: ['home', 'industries', 'solutions', 'services', 'partners', 'client', 'about-us', 'careers', 'blog', 'contact', 'coming-soon'],
-
   });
 
 });
@@ -57,7 +57,7 @@ $(document).ready(function () {
     var result1 = pattern.test(email, name, phoneNo, about);
     if (result1) {
       var mailID1 = {emailID: email, Name: name, Number: phoneNo, About: about};
-      
+
       $.ajax({
         url: 'https://hookb.in/6JyKx9JpkxT2Z20mYwRK',
         type: 'POST',
